@@ -1,4 +1,4 @@
-import '../app/globals.css';
+import '../styles/globals.css';
 import type { AppProps } from 'next/app';
 import { Inria_Sans } from '@next/font/google';
 

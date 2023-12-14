@@ -1,5 +1,3 @@
-// import React from 'react'
-import '../app/globals.css'
 import { useRouter } from 'next/router'
 
 export default function Index() {
