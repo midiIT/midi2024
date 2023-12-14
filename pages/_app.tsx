@@ -1,6 +1,6 @@
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
-import { Inria_Sans } from '@next/font/google';
+import { Inria_Sans } from "next/font/google";
 
 const inria_sans = Inria_Sans({
     subsets: ['latin'],
