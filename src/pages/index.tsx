@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 function Index() {
   return (
     <>
@@ -11,23 +9,7 @@ function Index() {
             MIDI 2024
           </div>{" "}
           {/* Larger text */}
-          <p className="mb-5 text-white text-lg">Please select webpage type</p>
-          <div className="flex justify-center gap-4">
-            <Link
-              className="bg-blue-500 text-white font-bold py-2 px-4 min-w-[120px] rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline"
-              type="button"
-              to="/interactive"
-            >
-              Interactive
-            </Link>
-            <Link
-              className="bg-blue-500 text-white font-bold py-2 px-4 min-w-[120px] rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline"
-              type="button"
-              to="/static"
-            >
-              Static
-            </Link>
-          </div>
+            <p className="text-white text-lg"> COMING SOON... </p>
         </div>
       </div>
     </>
