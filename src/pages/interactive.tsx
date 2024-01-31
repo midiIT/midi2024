@@ -1,10 +1,14 @@
 function Interactive() {
   return (
     <>
-      <div className="flex items-center justify-center h-screen bg-gray-800">
-        <h1 className="text-white text-5xl font-bold mb-5">
-          Interactive webpage
-        </h1>
+      {/* Corkboard Section */}
+      <div className="flex flex-col items-center justify-center h-screen bg-cover bg-center opacity-50">
+        <h1 className="text-5xl font-bold">Place for corkboard</h1>
+      </div>
+
+      {/* Sponsors Section */}
+      <div className="h-screen flex justify-center items-center bg-black">
+        <h1 className="text-5xl font-bold text-white">Place for sponsors</h1>
       </div>
     </>
   );
