@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import corkboardImage from "../images/corkboard.jpg";
+import Sponsors from "../components/sponsors/Sponsors.tsx";
+// import corkboardImage from "../images/corkboard.jpg";
 
 function Interactive() {
   const navigate = useNavigate();
@@ -27,9 +28,7 @@ function Interactive() {
       </div>
 
       {/* Sponsors Section */}
-      <div className="h-screen flex justify-center items-center bg-black">
-        <h1 className="text-5xl font-bold text-white">Place for sponsors</h1>
-      </div>
+        <Sponsors/>
     </>
   );
 }
