@@ -1,12 +1,7 @@
 import Sponsor from "./Sponsor.tsx";
+import { SponsorType } from "./Types.ts";
 
 export default function Sponsors() {
-
-    type SponsorType = {
-        title: string;
-        url: string;
-        logo: string;
-    }
 
     // TODO: replace with real sponsonrs
     // placeholder data
@@ -19,6 +14,36 @@ export default function Sponsors() {
             },
             {
                 title: 'bankera',
+                url: 'https://bankerait.lt/',
+                logo: 'https://midi.lt/2023/_next/static/media/bankera.5825ccf0.svg?w=1200&q=75'
+            },
+            {
+                title: 'asseco1',
+                url: 'https://lt.asseco.com/',
+                logo: 'https://midi.lt/2023/_next/static/media/asseco.bd0fe713.png?w=3840&q=75'
+            },
+            {
+                title: 'bankera1',
+                url: 'https://bankerait.lt/',
+                logo: 'https://midi.lt/2023/_next/static/media/bankera.5825ccf0.svg?w=1200&q=75'
+            },
+            {
+                title: 'asseco2',
+                url: 'https://lt.asseco.com/',
+                logo: 'https://midi.lt/2023/_next/static/media/asseco.bd0fe713.png?w=3840&q=75'
+            },
+            {
+                title: 'bankera2',
+                url: 'https://bankerait.lt/',
+                logo: 'https://midi.lt/2023/_next/static/media/bankera.5825ccf0.svg?w=1200&q=75'
+            },
+            {
+                title: 'asseco3',
+                url: 'https://lt.asseco.com/',
+                logo: 'https://midi.lt/2023/_next/static/media/asseco.bd0fe713.png?w=3840&q=75'
+            },
+            {
+                title: 'bankera3',
                 url: 'https://bankerait.lt/',
                 logo: 'https://midi.lt/2023/_next/static/media/bankera.5825ccf0.svg?w=1200&q=75'
             },
@@ -50,10 +75,18 @@ export default function Sponsors() {
     }
 
     return (
-        <div className="h-screen flex justify-center items-center bg-black">
-            {sponsors.gold.map(sponsor =>
-                (<Sponsor key={sponsor.title} title={sponsor.title} url={sponsor.url} />)
-            )}
+        //  bg-black
+        <div className="h-screen flex justify-center items-center">
+            <div>
+                {/*text-white*/}
+                <p className="mb-8 text-center text-5xl md:text-7xl">Auksiniai rėmėjai</p>
+                <div className="grid grid-cols-3 justify-items-center">
+                    {sponsors.gold.map(sponsor =>
+                        (<Sponsor key={sponsor.title} sponsor={sponsor} />)
+                    )}
+                </div>
+            </div>
+            <div className="my-4 h-2 bg-slate-600/30"></div>
         </div>
     )
 }
