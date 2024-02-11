@@ -22,13 +22,10 @@ function Interactive() {
             ←
           </button>
         </div>
-        
-        <h1 className="text-5xl font-bold">Place for corkboard</h1>
       </div>
 
       {/* Sponsors Section */}
       <div className="h-screen flex justify-center items-center bg-black">
-        <h1 className="text-5xl font-bold text-white">Place for sponsors</h1>
       </div>
     </>
   );
