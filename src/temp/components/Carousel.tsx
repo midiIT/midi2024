@@ -7,6 +7,7 @@ import {
   PresentationChartLineIcon,
 } from "@heroicons/react/24/outline";
 import Navigationbuttons from "../components/NavigationButtons";
+import MIDILogotipas from "../public/MIDIlogo.webp"
 
 const sections: string[] = ["events", "team", "sponsors", "articles"];
 
@@ -84,7 +85,7 @@ export default function Carousel() {
     <div className="z-50 w-full bg-gradient-to-b from-slate-800 to-slate-700/80 py-4 px-8 backdrop-blur-sm md:fixed md:inline-grid md:h-screen md:w-48">
       <img
         alt="MIDI logotipas"
-        src="/MIDIlogo.webp"
+        src={MIDILogotipas}
         height="1250"
         width="1250"
         loading="eager"
