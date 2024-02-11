@@ -11,11 +11,10 @@ import {
   faUsers,
   faIdCardAlt,
 } from "@fortawesome/free-solid-svg-icons";
-import Image from "next/image";
-import asseco from "public/events/asseco_white.svg";
+import asseco from "../../asseco_white.svg";
 
-import lanparty from "public/events/lanparty.jpg";
-import muge from "public/events/muge.jpg";
+import lanparty from "../../public/events/lanparty.jpg";
+import muge from "../../public/events/muge.jpg";
 
 var events = [
   {
@@ -164,11 +163,11 @@ export default function EventsSection() {
             <div className="flex flex-col flex-wrap justify-center px-4 py-3">
               <div className="flex flex-wrap items-center justify-around">
                 <div className="lg:basis-1/2 lg:overflow-hidden">
-                  <Image
+                  <img
                     className="object-scale-down py-3"
                     src={event.photo}
                     alt="aaa"
-                  ></Image>
+                  ></img>
                 </div>
                 <div className="basis-1/2 whitespace-nowrap lg:basis-1/3 2xl:basis-1/5">
                   <a target="_blank" href={event.more} className="">

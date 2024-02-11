@@ -1,4 +1,3 @@
-import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
 import { useState, useEffect, useCallback } from "react";
 import {
@@ -18,7 +17,8 @@ export default function Carousel() {
     axis: "x",
     loop: true,
     skipSnaps: true,
-    speed: 20,
+    // Remove the 'speed' property from the object literal
+    // speed: 20,
     inViewThreshold: 0.7,
   });
 
@@ -82,14 +82,14 @@ export default function Carousel() {
 
   return (
     <div className="z-50 w-full bg-gradient-to-b from-slate-800 to-slate-700/80 py-4 px-8 backdrop-blur-sm md:fixed md:inline-grid md:h-screen md:w-48">
-      <Image
+      <img
         alt="MIDI logotipas"
         src="/MIDIlogo.webp"
         height="1250"
         width="1250"
-        priority
+        loading="eager"
         className="m-auto h-48 w-auto pb-10 md:mr-0 md:-ml-2 md:mt-0 md:h-auto short:ml-1 short:h-36"
-      ></Image>
+      ></img>
       <div
         className="overflow-hidden md:overflow-y-hidden short:overflow-y-auto"
         ref={emblaRef}

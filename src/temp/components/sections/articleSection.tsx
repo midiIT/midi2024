@@ -1,12 +1,9 @@
-import React, { useState } from "react";
+import React, { lazy, useState } from "react";
 import { createPortal } from "react-dom";
-import dynamic from "next/dynamic";
-import useWindowDimensions from "../../../midi2024/src/temp/hooks/useWindowDimensions";
-import Image from "next/image";
-import placeholder from "public/media/placeholder.png";
-const ViewPDF = dynamic(() => import("../ViewPDF"), {
-  ssr: false,
-});
+import useWindowDimensions from "../../hooks/useWindowDimensions";
+import placeholder from "../../public/media/placeholder.png";
+
+const ViewPDF = lazy(() => import("../ViewPDF"));
 
 export default function ArticleSection(props: {
   name: string;
@@ -24,11 +21,11 @@ export default function ArticleSection(props: {
         active:shadow-none active:duration-100 dark:hover:shadow-black/30"
         onClick={() => setShow(true)}
       >
-        <Image
+        <img
           className="float-left h-24 w-24 sm:h-32 sm:w-32 md:h-36 md:w-36"
           alt="placeholder"
           src={placeholder}
-        ></Image>
+        ></img>
         <span>{props.name}</span>
       </button>
       {show &&

@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/index";
+// import Temp from "./pages/temp";
 import Static from "./pages/static";
 import Interactive from "./pages/interactive";
 
