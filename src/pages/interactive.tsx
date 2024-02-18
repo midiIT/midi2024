@@ -1,5 +1,7 @@
 import { useNavigate } from "react-router-dom";
+import TeamSection from "../components/TeamSection";
 import MIDILogo from "../images/MIDI-Logotipas.png";
+import TeamIcon from "../images/team_clipboard.png";
 
 function Interactive() {
   const navigate = useNavigate();
@@ -11,17 +13,13 @@ function Interactive() {
   return (
     <>
       {/* Corkboard Section */}
-      <div className="h-screen bg-cover bg-center bg-[url(../images/corkboard.jpg)]">
+      <div className="relative h-screen bg-cover bg-center bg-[url(../images/corkboard.jpg)]">
         {/* Logo Container */}
         <div className="flex justify-center pt-4">
-          <img
-            className="h-32 w-32"
-            src={MIDILogo}
-            alt="MIDI Logo"></img>
+          <img className="h-32 w-32" src={MIDILogo} alt="MIDI Logo"></img>
         </div>
 
-        
-        <div className="flex flex-col items-center justify-center h-full">
+        <div className="flex items-center justify-center h-full">
           {/* Back Arrow */}
           <div className="absolute top-4 left-4">
             <button
@@ -32,11 +30,16 @@ function Interactive() {
             </button>
           </div>
         </div>
+
+        {/* Team Icon in Bottom Right Corner */}
+          <div className="flex flex-col absolute bottom-4 right-4 items-center">
+            <TeamSection />
+            <p className="text-white mt-2">Komanda</p>
+          </div>
       </div>
 
       {/* Sponsors Section */}
-      <div className="h-screen flex justify-center items-center bg-black">
-      </div>
+      <div className="h-screen flex justify-center items-center bg-black"></div>
     </>
   );
 }
