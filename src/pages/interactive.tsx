@@ -34,7 +34,6 @@ function Interactive() {
         {/* Team Icon in Bottom Right Corner */}
           <div className="flex flex-col absolute bottom-4 right-4 items-center">
             <TeamSection />
-            <p className="text-white mt-2">Komanda</p>
           </div>
       </div>
 
