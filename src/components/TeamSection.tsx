@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import clipboardImage from "../images/team_clipboard.png";
 import Avatar from "./Avatar.tsx";
 import testImg from "../images/midi-50.webp";
 
