@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import clipboardImage from "../images/team_clipboard.png";
 import Avatar from "./Avatar.tsx";
+import testImg from "../images/midi-50.webp";
 
 interface TeamMember {
   picture: string;
@@ -74,7 +75,7 @@ const TeamSection: React.FC = () => {
 
       {/* Member list */}
       {showClipboard && (
-        <div className="fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center bg-black bg-opacity-50 overflow-auto"
+        <div className="fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center bg-black bg-opacity-50 overflow-auto no-scrollbar"
         onClick={(e) => {
           if (e.target === e.currentTarget) {
             setShowClipboard(false);
@@ -91,11 +92,11 @@ const TeamSection: React.FC = () => {
                   {/* placeholder */}
                   <Avatar
                     className="basis-full md:basis-1/3 lg:basis-1/4"
-                    name="Gabija Burokaitė"
-                    title="MIDI vadovė"
-                    imgsrc={clipboardImage}
-                    phone="+370 68 353 981"
-                    email="vadovas@midi.lt"
+                    name="Olen Račkauskas"
+                    title="MIDI IT vadovas"
+                    imgsrc={testImg}
+                    phone="+370 64 622 318"
+                    email="it@midi.lt"
                     placeholder={"blur"}
                     />
                 </div>
