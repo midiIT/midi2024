@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import TeamSection from "../components/TeamSection";
+import EventSection from "../components/eventSection";
 import MIDILogo from "../images/MIDI-Logotipas.png";
 import TeamIcon from "../images/team_clipboard.png";
 
@@ -30,6 +31,8 @@ function Interactive() {
             </button>
           </div>
         </div>
+
+        <EventSection/>
 
         {/* Team Icon in Bottom Right Corner */}
           <div className="flex flex-col absolute bottom-4 right-4 items-center">
