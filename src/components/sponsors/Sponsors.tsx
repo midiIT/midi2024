@@ -75,14 +75,24 @@ export default function Sponsors() {
     }
 
     return (
-        //  bg-black
-        <div className="h-screen flex justify-center items-center">
+        <div className="bg-black h-screen flex justify-center items-center">
             <div>
-                {/*text-white*/}
-                <p className="mb-8 text-center text-5xl md:text-7xl">Auksiniai rėmėjai</p>
+                <p className="mb-8 text-center text-5xl md:text-7xl text-white">Auksiniai rėmėjai</p>
                 <div className="grid grid-cols-3">
                     {sponsors.gold.map(sponsor =>
-                        (<Sponsor key={sponsor.title} sponsor={sponsor} />)
+                        (<Sponsor key={sponsor.title} sponsor={sponsor}/>)
+                    )}
+                </div>
+                <p className="mb-8 text-center text-5xl md:text-7xl text-white">Sidabriniai rėmėjai</p>
+                <div className="grid grid-cols-3">
+                    {sponsors.silver.map(sponsor =>
+                        (<Sponsor key={sponsor.title} sponsor={sponsor}/>)
+                    )}
+                </div>
+                <p className="mb-8 text-center text-5xl md:text-7xl text-white">Bronziniai rėmėjai</p>
+                <div className="grid grid-cols-3">
+                    {sponsors.bronze.map(sponsor =>
+                        (<Sponsor key={sponsor.title} sponsor={sponsor}/>)
                     )}
                 </div>
             </div>
