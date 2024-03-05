@@ -17,8 +17,10 @@ export default function Sponsor({ sponsor: { title, logo, url } }: Props) {
         // <a className="md:basis-1/4 md:scale-75" target="_blank" href={url}>
         //     onClick={navigateToSponsor}
         // <div className="flex content-center">
-            <img src={logo} alt={title} className="m-2" style={{maxWidth: '400px', filter: 'invert(100%)'}}
-                 onClick={navigateToSponsor} />
+        <div className="m-2 flex">
+            <img src={logo} alt={title} style={{maxWidth: '400px', filter: 'invert(100%)'}}
+                 onClick={navigateToSponsor}/>
+        </div>
         // </div>
         // </a>
     )

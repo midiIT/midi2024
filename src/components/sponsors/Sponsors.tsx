@@ -80,7 +80,7 @@ export default function Sponsors() {
             <div>
                 {/*text-white*/}
                 <p className="mb-8 text-center text-5xl md:text-7xl">Auksiniai rėmėjai</p>
-                <div className="grid grid-cols-3 justify-items-center">
+                <div className="grid grid-cols-3">
                     {sponsors.gold.map(sponsor =>
                         (<Sponsor key={sponsor.title} sponsor={sponsor} />)
                     )}
