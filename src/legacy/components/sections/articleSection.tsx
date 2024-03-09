@@ -1,9 +1,11 @@
-import React, { lazy, useState } from "react";
+import React, { useState, Suspense, lazy } from "react";
 import { createPortal } from "react-dom";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import placeholder from "../../public/media/placeholder.png";
-
-const ViewPDF = lazy(() => import("../ViewPDF"));
+const ViewPDF = lazy(() => import('../ViewPDF'));
+// const ViewPDF = dynamic(() => import("../ViewPDF"), {
+//   ssr: false,
+// });
 
 export default function ArticleSection(props: {
   name: string;
@@ -54,7 +56,9 @@ export default function ArticleSection(props: {
               </button>
             )}
             <div onClick={() => setShow(false)}>
+            <Suspense fallback={<div>Loading...</div>}>
               <ViewPDF pdfLocation={props.pdfLocation} />
+            </Suspense>
             </div>
           </div>,
           document.body
