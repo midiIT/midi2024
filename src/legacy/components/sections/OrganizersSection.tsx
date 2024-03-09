@@ -21,7 +21,7 @@ import Rimantas from "../../public/media/rimantas.webp";
 import Redas from "../../public/media/redas.webp";
 import Kristupas from "../../public/media/kristupas.webp";
 import Domas from "../../public/media/domas.webp";
-import Vytenis from "../../public/media/Vytenis.webp";
+import Vytenis from "../../public/media/vytenis.webp";
 
 export default function OrganizersSection() {
   return (
