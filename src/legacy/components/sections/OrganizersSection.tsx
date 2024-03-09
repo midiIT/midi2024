@@ -30,26 +30,26 @@ export default function OrganizersSection() {
       <div className="flex flex-wrap justify-center gap-8">
         <Avatar
           className="basis-full md:basis-1/3 lg:basis-1/4"
-          name="Gabija Burokaitė"
-          title="MIDI vadovė"
+          name="Augustina Petraitytė"
+          title="MIDI vadovai"
           imgsrc={Gabija}
-          phone="+370 68 353 981"
+          phone="+370 61399808"
           email="vadovas@midi.lt"
           placeholder={"blur"}
         />
         <Avatar
           className="basis-full md:basis-1/3 lg:basis-1/4"
-          name="Augustina Petraitytė"
-          title="Komunikacijos vadovai"
+          name="Darius Skergelza"
+          title="Žmogiškųjų išteklių vadovas"
           imgsrc={Augustina}
-          phone="+370 61 399 808"
-          email="info@midi.lt"
+          phone="+370 60 503 379"
+          email="hr@midi.lt"
           placeholder={"blur"}
         />
         <Avatar
           className="basis-full md:basis-1/3 lg:basis-1/4"
-          name="Ričardas Čubukinas"
-          title="Organizacinės srities vadovas"
+          name="Gytis Mockevičius"
+          title="MC"
           imgsrc={Ricardas}
           phone="+370 67 420 546"
           email="dienine@midi.lt"
@@ -57,8 +57,8 @@ export default function OrganizersSection() {
         />
         <Avatar
           className="basis-full md:basis-1/3 lg:basis-1/4"
-          name="Mėta Žemaitytė"
-          title="Organizacinės srities vadovė"
+          name="Domas Bruišys"
+          title="LAN"
           imgsrc={Meta}
           phone="+370 60 063 381"
           email="vakarine@midi.lt"
@@ -66,8 +66,8 @@ export default function OrganizersSection() {
         />
         <Avatar
           className="basis-full md:basis-1/3 lg:basis-1/4"
-          name="Gytis Mockevičius"
-          title="LAN Party vadovas"
+          name="Rokas Baltrušaitis"
+          title="Marketingo vadovas"
           imgsrc={Gytis}
           phone="+370 62 423 266"
           email="lan@midi.lt"
@@ -75,7 +75,7 @@ export default function OrganizersSection() {
         />
         <Avatar
           className="basis-full md:basis-1/3 lg:basis-1/4"
-          name="Darius Skergelza"
+          name="Augustas Švetkauskas"
           title="LAN Party vadovas"
           imgsrc={Darius}
           phone="+370 60 503 379"
