@@ -1,7 +1,7 @@
 import Carousel from "@/legacy/components/Carousel";
 import ArticleSection from "@/legacy/components/sections/articleSection";
 import EventsSection from "@/legacy/components/sections/eventsSection";
-import OrganizersSection from "@/legacy/components/sections/OrganizersSection";
+import OrganizersSection from "@/legacy/components/sections/organizersSection"
 import SponsorsSection from "@/legacy/components/sections/sponsorsSection";
 import TestPDF from "@/legacy/public/pdf/placeholder1.pdf";
 import { Helmet } from "react-helmet";
