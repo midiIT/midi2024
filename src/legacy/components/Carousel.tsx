@@ -6,6 +6,10 @@ import {
   WrenchScrewdriverIcon,
   PresentationChartLineIcon,
 } from "@heroicons/react/24/outline";
+import TeamSectionIcon from "../public/icons/TeamSection.webp";
+import EventSectionIcon from "../public/icons/EventSection.webp";
+import SponsorSectionIcon from "../public/icons/SponsorSection.webp";
+import ArticleSectionIcon from "../public/icons/ArticleSection.webp";
 import Navigationbuttons from "../components/NavigationButtons";
 import MIDILogotipas from "../public/MIDIlogo.webp"
 
@@ -103,7 +107,7 @@ export default function Carousel() {
               }}
               className="slide-container z-10 flex cursor-pointer flex-col items-center justify-between"
             >
-              <CalendarDaysIcon className="h-32 text-white md:h-20 short:h-14"></CalendarDaysIcon>
+              <img src={EventSectionIcon} className="h-32 text-white md:h-20 short:h-14 scale-125"></img>
               <h2 className="my-1 text-center text-4xl text-white md:text-2xl">
                 Renginiai
               </h2>
@@ -122,7 +126,7 @@ export default function Carousel() {
               onClick={() => setSelectedIndex([1])}
               className="slide-container z-10 flex cursor-pointer flex-col items-center justify-between"
             >
-              <WrenchScrewdriverIcon className="h-32 text-gray-300 md:h-20 short:h-14"></WrenchScrewdriverIcon>
+              <img src={TeamSectionIcon} className="h-32 text-gray-300 md:h-20 short:h-14 scale-125"></img>
               <h2 className="my-1 text-center text-4xl text-white md:text-2xl">
                 Komanda
               </h2>
@@ -137,7 +141,7 @@ export default function Carousel() {
               onClick={() => setSelectedIndex([2])}
               className="slide-container z-10 flex cursor-pointer flex-col items-center justify-between"
             >
-              <HeartIcon className="h-32 text-red-700 md:h-20 short:h-14"></HeartIcon>
+              <img src={SponsorSectionIcon} className="h-32 text-red-700 md:h-20 short:h-14 scale-125"></img>
               <h2 className="my-1 text-center text-4xl text-white md:text-2xl">
                 Rėmėjai
               </h2>
@@ -152,7 +156,7 @@ export default function Carousel() {
               onClick={() => setSelectedIndex([3])}
               className="slide-container z-10 flex cursor-pointer flex-col items-center justify-between"
             >
-              <PresentationChartLineIcon className="h-32 text-white md:h-20 short:h-14"></PresentationChartLineIcon>
+              <img src={ArticleSectionIcon} className="h-32 text-white md:h-20 short:h-14 scale-125"></img>
               <h2 className="my-1 text-center text-4xl text-white md:text-2xl">
                 Rėmėjų straipsniai
               </h2>
