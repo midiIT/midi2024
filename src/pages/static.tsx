@@ -3,6 +3,7 @@ import ArticleSection from "@/legacy/components/sections/articleSection";
 import EventsSection from "@/legacy/components/sections/eventsSection";
 import OrganizersSection from "@/legacy/components/sections/OrganizersSection";
 import SponsorsSection from "@/legacy/components/sections/sponsorsSection";
+import TestPDF from "@/legacy/public/pdf/placeholder1.pdf";
 import { Helmet } from "react-helmet";
 
 import "../styles/static.css";
@@ -41,7 +42,7 @@ export default function Static() {
           className="invisible hidden h-screen w-full bg-slate-900 px-4 pt-4 text-white opacity-0 transition-opacity duration-500"
         >
           <div className="grid-cols1 grid md:grid-cols-2 lg:grid-cols-3">
-            <ArticleSection name="Test" pdfLocation="/pdf/placeholder1.pdf" />
+            <ArticleSection name="Test" pdfLocation={TestPDF} />
           </div>
         </section>
       </div>
