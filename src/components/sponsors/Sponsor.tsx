@@ -1,4 +1,5 @@
-import {SponsorType} from "./Types.ts";
+import { SponsorType } from "./Types.ts"
+import './styles.css'
 
 type Props = {
     sponsor: SponsorType
@@ -10,9 +11,7 @@ export default function Sponsor({ sponsor: { title, logo, url } }: Props) {
     }
 
     return (
-        <div className="m-2 flex">
-            <img src={logo} alt={title} style={{maxWidth: '400px'}}
-                 onClick={navigateToSponsor}/>
-        </div>
+        <img className="m-3 sponsor" src={logo} alt={title}
+             onClick={navigateToSponsor}/>
     )
 }

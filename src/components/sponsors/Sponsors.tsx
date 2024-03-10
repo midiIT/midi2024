@@ -1,8 +1,8 @@
-import Sponsor from "./Sponsor.tsx";
-import { SponsorType } from "./Types.ts";
+import Sponsor from "./Sponsor.tsx"
+import { SponsorType } from "./Types.ts"
+import './styles.css'
 
 export default function Sponsors() {
-
     // TODO: replace with real sponsonrs
     // placeholder data
     const sponsors: { gold: SponsorType[], silver: SponsorType[], bronze: SponsorType[] } = {
@@ -47,6 +47,11 @@ export default function Sponsors() {
                 url: 'https://bankerait.lt/',
                 logo: 'https://midi.lt/2023/_next/static/media/bankera.5825ccf0.svg?w=1200&q=75'
             },
+            {
+                title: 'bankera4',
+                url: 'https://bankerait.lt/',
+                logo: 'https://midi.lt/2023/_next/static/media/bankera.5825ccf0.svg?w=1200&q=75'
+            },
         ],
         silver: [
             {
@@ -75,22 +80,22 @@ export default function Sponsors() {
     }
 
     return (
-        <div className="bg-black h-screen flex justify-center items-center">
+        <div className="bg-black flex justify-center items-center" style={{minHeight: "100vh"}}>
             <div>
-                <p className="mb-8 text-center text-5xl md:text-7xl text-white">Auksiniai rėmėjai</p>
-                <div className="grid grid-cols-3">
+                <p className="mb-8 text-center text-5xl md:text-7xl text-white sponsor--font">Auksiniai rėmėjai</p>
+                <div className="flex flex-wrap justify-center">
                     {sponsors.gold.map(sponsor =>
                         (<Sponsor key={sponsor.title} sponsor={sponsor}/>)
                     )}
                 </div>
-                <p className="mb-8 text-center text-5xl md:text-7xl text-white">Sidabriniai rėmėjai</p>
-                <div className="grid grid-cols-3">
+                <p className="mb-8 text-center text-5xl md:text-7xl text-white sponsor--font">Sidabriniai rėmėjai</p>
+                <div className="flex flex-wrap justify-center">
                     {sponsors.silver.map(sponsor =>
                         (<Sponsor key={sponsor.title} sponsor={sponsor}/>)
                     )}
                 </div>
-                <p className="mb-8 text-center text-5xl md:text-7xl text-white">Bronziniai rėmėjai</p>
-                <div className="grid grid-cols-3">
+                <p className="mb-8 text-center text-5xl md:text-7xl text-white sponsor--font">Bronziniai rėmėjai</p>
+                <div className="flex flex-wrap justify-center">
                     {sponsors.bronze.map(sponsor =>
                         (<Sponsor key={sponsor.title} sponsor={sponsor}/>)
                     )}
