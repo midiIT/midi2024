@@ -80,7 +80,7 @@ export default function Sponsors() {
     }
 
     return (
-        <div className="bg-black flex justify-center items-center" style={{minHeight: "100vh"}}>
+        <div className="flex justify-center items-center" style={{minHeight: "100vh", backgroundColor: "rgb(15 23 42)"}}>
             <div>
                 <p className="mb-8 text-center text-5xl md:text-7xl text-white sponsor--font">Auksiniai rėmėjai</p>
                 <div className="flex flex-wrap justify-center">
