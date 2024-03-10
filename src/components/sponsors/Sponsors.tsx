@@ -88,12 +88,14 @@ export default function Sponsors() {
                         (<Sponsor key={sponsor.title} sponsor={sponsor}/>)
                     )}
                 </div>
+                <div className="my-4 h-2 bg-slate-600/30" style={{width: "98%", margin: "auto"}}></div>
                 <p className="mb-8 text-center text-5xl md:text-7xl text-white sponsor--font">Sidabriniai rėmėjai</p>
                 <div className="flex flex-wrap justify-center">
                     {sponsors.silver.map(sponsor =>
                         (<Sponsor key={sponsor.title} sponsor={sponsor}/>)
                     )}
                 </div>
+                <div className="my-4 h-2 bg-slate-600/30" style={{width: "98%", margin: "auto"}}></div>
                 <p className="mb-8 text-center text-5xl md:text-7xl text-white sponsor--font">Bronziniai rėmėjai</p>
                 <div className="flex flex-wrap justify-center">
                     {sponsors.bronze.map(sponsor =>
@@ -101,7 +103,6 @@ export default function Sponsors() {
                     )}
                 </div>
             </div>
-            <div className="my-4 h-2 bg-slate-600/30"></div>
         </div>
     )
 }
