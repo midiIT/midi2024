@@ -6,6 +6,9 @@ export default {
       fontFamily: {
         sans: ["Dosis", "sans-serif"],
       },
+      colors: {
+        'midiblue': '#0075B5'
+      }
     },
   },
   plugins: [],
