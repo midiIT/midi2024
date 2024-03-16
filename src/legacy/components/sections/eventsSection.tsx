@@ -194,7 +194,7 @@ export default function EventsSection() {
             key={event.name}
             className={
               "aboutEvent basis-7/6 rounded-lg border-2 border-gray-200 shadow-sm md:basis-5/6" +
-              (event.name === "MIDI LAN Party" ? "" : " hidden")
+              (event.name === "Template for events" ? "" : " hidden")
             }
           >
             <div className="rounded-t-lg bg-gray-100 px-4 py-3">
