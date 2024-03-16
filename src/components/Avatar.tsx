@@ -9,18 +9,20 @@ export default function Avatar(props: {
   placeholder?: any;
 }) {
   return (
-    <div
-      className={
-        props.className + " flex flex-col items-center gap-2 text-center"
-      }
-    >
-      <img
-        className="min-w-48 min-h-48 h-48 w-48 rounded-full object-cover"
-        src={props.imgsrc}
-        alt={props.name}
-        loading={props.priority ? "eager" : "lazy"}
-      />
-      <p className="text-4xl">{props.name}</p>
+    <div className={
+      props.className + " flex flex-col items-center gap-2 text-center"
+    }>
+      {/* polaroid card */}
+      <div className="w-60 h-60 bg-white rounded flex flex-col items-center p-2">
+        <img
+          className=""
+          src={props.imgsrc}
+          alt={props.name}
+          loading={props.priority ? "eager" : "lazy"}
+        />
+        <p className="text-4xl">{props.name}</p>
+      </div>
+      {/* contacts */}
       <p className="w-3/4 text-2xl ">{props.title}</p>
       <a
         href={"mailto:" + props.email}

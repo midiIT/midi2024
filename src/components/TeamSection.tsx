@@ -61,11 +61,11 @@ const TeamSection: React.FC = () => {
       {!showClipboard && (
       <button className="h-24 w-20 bg-gray-900 rounded" onClick={() => setShowClipboard(true)}>
         <div className="absolute w-1/3 left-1/2 transform -translate-x-1/2 h-2">
-          <div className="absolute w-1/3 left-1/2 transform -translate-x-1/2 top-0 h-1/3 rounded-t-full bg-gray-400"></div>
-          <div className="absolute w-full top-1/3 h-3/4 rounded-t-full bg-gray-400"></div>
+          <div className="absolute w-1/3 left-1/2 transform -translate-x-1/2 top-0 h-1/3 rounded-t-full bg-gradient-to-t from-amber-500 via-45% via-amber-100 to-amber-400"></div>
+          <div className="absolute w-full top-1/3 h-3/4 rounded-t-full bg-gradient-to-t from-amber-500 via-45% via-amber-100 to-amber-400"></div>
         </div>
         <div className="flex items-center justify-center">
-          <div className="m-2 h-20 w-16 bg-white flex justify-center">
+          <div className="m-2 h-20 w-16 bg-gray-400 flex justify-center">
             <p className="text-black text-sm">Komanda</p>
           </div>
         </div>
@@ -82,10 +82,10 @@ const TeamSection: React.FC = () => {
         }}>
           <div className="absolute top-0 bg-gray-900 rounded">
             <div className="absolute w-1/2 left-1/2 transform -translate-x-1/2 h-16">
-              <div className="absolute w-1/3 left-1/2 transform -translate-x-1/2 top-0 h-1/3 rounded-t-full bg-gray-400"></div>
-              <div className="absolute w-full top-1/3 h-3/4 rounded-t-full bg-gray-400"></div>
+              <div className="absolute w-1/3 left-1/2 transform -translate-x-1/2 top-0 h-1/3 rounded-t-full bg-gradient-to-t from-amber-500 via-45% via-amber-100 to-amber-400"></div>
+              <div className="absolute w-full top-1/3 h-3/4 rounded-t-full bg-gradient-to-t from-amber-500 via-45% via-amber-100 to-amber-400"></div>
             </div>
-            <div className="m-12 pt-8 bg-white p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <div className="m-12 pt-8 bg-gray-400 p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
               {teamMembers.map((member, index) => (
                 <div key={index} className="flex flex-wrap justify-center">
                   {/* placeholder */}
