@@ -34,7 +34,7 @@ export default function EventSection() {
       eventName: "Event numero uno",
       image: placeholderImg,
       banner: placeholderBanner,
-      text: "Testuojamas tekstas note'e",
+      text: "Testuojamas tekstas note'e nomer viens",
     },
     {
       id: "note2",
@@ -61,7 +61,7 @@ export default function EventSection() {
       eventName: "Event numero quatro",
       image: placeholderImg,
       banner: placeholderBanner,
-      text: "Testuojamas tekstas note'e",
+      text: "Testuojamas tekstas note'e wooo per daug teksto aaajajajasjdaksdjaskjdkajsdkasjdkasjd",
     },
   ]);
 
@@ -181,16 +181,6 @@ export default function EventSection() {
           />
         </div>
       ))}
-      {/* <img
-          key={note.id}
-          ref={addToRefs}
-          src={placeholderImg}
-          alt={`Note ${index + 1}`}
-          className="z-10 absolute"
-          style={{ top: note.top, left: note.left, transform: "rotate(-20deg) scale(0.3)" }}
-          onClick={() => toggleNote(note.id)}
-        /> */}
-      {/* ))} */}
 
       <svg
         style={{
@@ -214,19 +204,32 @@ export default function EventSection() {
       </svg>
       {activeNote && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 overflow-auto z-20">
-          <div className="relative" ref={modalContentRef}>
+          <div className="relative scale-[3.5]" ref={modalContentRef}>
             <img
               src={placeholderZoom}
               alt="Event Detail"
               className="block mx-auto"
             />
-            <div className="absolute inset-0 flex flex-col items-center justify-center p-4">
-              <h2 className="text-xl text-white font-bold text-center">
+            <div className="absolute inset-0 flex flex-col justify-between">
+              <h2 className="text-l text-black font-bold text-center">
                 {notes.find((note) => note.id === activeNote)?.eventName}
               </h2>
-              <p className="text-white text-center mt-2">
-                {notes.find((note) => note.id === activeNote)?.text}
-              </p>
+              <div className="flex justify-between px-4">
+                <div className="w-1/2 bg-red-500">
+                  <img
+                    src={notes.find((note) => note.id === activeNote)?.banner}
+                    alt="Event Banner"
+                    className="block mx-auto"
+                  />
+                </div>
+                <div className="w-1/2 bg-blue-500">
+                </div>
+              </div>
+
+              {/* Description at the bottom */}
+              <div className="text-xs text-white p-4 overflow-y-scroll">
+                <p>{notes.find((note) => note.id === activeNote)?.text}</p>
+              </div>
             </div>
           </div>
         </div>
