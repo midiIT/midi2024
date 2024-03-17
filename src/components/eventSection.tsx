@@ -114,6 +114,7 @@ export default function EventSection() {
     const endX = endNote.left + endNote.width / 2 + window.scrollX;
     const endY = endNote.top + endNote.height / 2 + window.scrollY;
 
+    // Control points
     const cp1X = (startX + endX) / 2;
     const cp1Y = Math.max(startY, endY) + 30;
     const cp2X = cp1X;
@@ -243,7 +244,14 @@ export default function EventSection() {
                     className="block mx-auto"
                   />
                 </div>
-                <div className="w-1/2 bg-blue-500"></div>
+                <div className="flex flex-col w-1/2 bg-blue-500">
+                  <div className="m-4 rounded-full border-4 border-midiblue px-4 pt-2 pb-4 text-center text-xs font-semibold text-midiblue transition-all hover:border-white hover:text-white">
+                    Daugiau / Read More
+                  </div>
+                  <div className="m-4 rounded-full border-4 border-midiblue px-4 pt-2 pb-4 text-center text-xs font-semibold text-midiblue transition-all hover:border-white hover:text-white">
+                    Registracija / Register
+                  </div>
+                </div>
               </div>
 
               {/* Description at the bottom */}
