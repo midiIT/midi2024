@@ -2,6 +2,11 @@ import React, { useState, useEffect, useRef } from "react";
 import placeholderImg from "../images/placeholderEvent.webp";
 import placeholderZoom from "../images/placeholderZoom.png";
 import placeholderBanner from "../images/team_clipboard.png";
+import RedNote from "../images/redNote.png";
+import GreenNote from "../images/greenNote.png";
+import OrangeNote from "../images/orangeNote.png";
+import PurpleNote from "../images/purpleNote.png";
+import CatNote from "../images/catTest.webp";
 
 export default function EventSection() {
   const [activeNote, setActiveNote] = useState(null);
@@ -29,40 +34,55 @@ export default function EventSection() {
   const [notes, setNotes] = useState([
     {
       id: "note1",
-      top: "10%",
-      left: "-10%",
+      top: "5%",
+      left: "10%",
       eventName: "Event numero uno",
-      image: placeholderImg,
-      banner: placeholderBanner,
+      image: PurpleNote,
+      banner: CatNote,
       text: "Testuojamas tekstas note'e nomer viens",
+      rotate: "rotate(-10deg)",
+      clickable: true,
     },
     {
       id: "note2",
       top: "50%",
-      left: "10%",
+      left: "5%",
       eventName: "Event numero dos",
-      image: placeholderImg,
+      image: RedNote,
       banner: placeholderBanner,
       text: "Testuojamas tekstas note'e",
+      rotate: "rotate(10deg)",
+      clickable: true,
     },
     {
       id: "note3",
-      top: "10%",
-      left: "30%",
+      top: "40%",
+      left: "40%",
       eventName: "Event numero tres",
-      image: placeholderImg,
+      image: GreenNote,
       banner: placeholderBanner,
       text: "Testuojamas tekstas note'e",
+      rotate: "rotate(20deg)",
+      clickable: true,
     },
     {
       id: "note4",
-      top: "10%",
-      left: "50%",
+      top: "20%",
+      left: "70%",
       eventName: "Event numero quatro",
-      image: placeholderImg,
+      image: OrangeNote,
       banner: placeholderBanner,
       text: "Testuojamas tekstas note'e wooo per daug teksto aaajajajasjdaksdjaskjdkajsdkasjdkasjd",
+      rotate: "rotate(-20deg)",
+      clickable: true,
     },
+    {
+      id: "catNote",
+      top: "70%",
+      left: "60%",
+      image: CatNote,
+      clickable: false,
+    }
   ]);
 
   // Define connections between notes by their IDs
@@ -73,6 +93,8 @@ export default function EventSection() {
     { startId: "note4", endId: "note1" },
     { startId: "note1", endId: "note3" },
     { startId: "note2", endId: "note4" },
+    { startId: "note4", endId: "catNote" },
+    { startId: "note1", endId: "catNote" }
   ]);
 
   const [paths, setPaths] = useState([]);
@@ -80,10 +102,9 @@ export default function EventSection() {
   const toggleEvent = () => setShowEvent(!showEvent);
 
   const toggleNote = (noteId) => {
-    if (activeNote === noteId) {
-      setActiveNote(null);
-    } else {
-      setActiveNote(noteId);
+    const note = notes.find((note) => note.id === noteId);
+    if (note && note.clickable) { // Check if note is clickable
+      setActiveNote(activeNote === noteId ? null : noteId);
     }
   };
 
@@ -93,14 +114,14 @@ export default function EventSection() {
     const endX = endNote.left + endNote.width / 2 + window.scrollX;
     const endY = endNote.top + endNote.height / 2 + window.scrollY;
 
-    // Control points for the Bezier curve
     const cp1X = (startX + endX) / 2;
-    const cp1Y = Math.min(startY, endY) + 200; // Adjust the arch's height
+    const cp1Y = Math.max(startY, endY) + 30;
     const cp2X = cp1X;
     const cp2Y = cp1Y;
 
     return `M ${startX},${startY} C ${cp1X},${cp1Y} ${cp2X},${cp2Y} ${endX},${endY}`;
-  };
+};
+
 
   const updatePaths = () => {
     const newPaths = connections
@@ -165,11 +186,11 @@ export default function EventSection() {
       {notes.map((note, index) => (
         <div
           key={note.id}
-          className="absolute z-10"
+          className={`absolute z-10 scale-[0.7] ${note.clickable ? 'cursor-pointer' : ''}`}
           style={{
             top: note.top,
             left: note.left,
-            transform: "rotate(-20deg) scale(0.3)",
+            transform: note.rotate,
           }}
           onClick={() => toggleNote(note.id)}
         >
@@ -177,7 +198,7 @@ export default function EventSection() {
             ref={addToRefs}
             src={note.image}
             alt={`Note ${index + 1}`}
-            className="cursor-pointer transition duration-300 ease-in-out"
+            className="transition duration-300 ease-in-out"
           />
         </div>
       ))}
@@ -204,13 +225,13 @@ export default function EventSection() {
       </svg>
       {activeNote && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 overflow-auto z-20">
-          <div className="relative scale-[3.5]" ref={modalContentRef}>
+          <div className="relative" ref={modalContentRef}>
             <img
               src={placeholderZoom}
               alt="Event Detail"
-              className="block mx-auto"
+              className="block mx-auto w-96 h-96"
             />
-            <div className="absolute inset-0 flex flex-col justify-between">
+            <div className="absolute inset-0 flex flex-col justify-between pt-4">
               <h2 className="text-l text-black font-bold text-center">
                 {notes.find((note) => note.id === activeNote)?.eventName}
               </h2>
@@ -222,12 +243,11 @@ export default function EventSection() {
                     className="block mx-auto"
                   />
                 </div>
-                <div className="w-1/2 bg-blue-500">
-                </div>
+                <div className="w-1/2 bg-blue-500"></div>
               </div>
 
               {/* Description at the bottom */}
-              <div className="text-xs text-white p-4 overflow-y-scroll">
+              <div className="text-base text-black justify-center text-center p-4 overflow-auto">
                 <p>{notes.find((note) => note.id === activeNote)?.text}</p>
               </div>
             </div>
