@@ -86,20 +86,20 @@ export default function Carousel() {
   }, [selectedIndex]);
 
   return (
-    <div className="z-50 w-full bg-gradient-to-b from-slate-800 to-slate-700/80 py-4 px-8 backdrop-blur-sm md:fixed md:inline-grid md:h-screen md:w-48">
+    <div className="z-50 w-full bg-gradient-to-b from-slate-800 to-slate-700/80 py-4 px-8 backdrop-blur-sm md:fixed md:flex md:h-screen md:w-48 md:flex-col md:justify-around">
       <img
         alt="MIDI logotipas"
         src={MIDILogotipas}
         height="1250"
         width="1250"
         loading="eager"
-        className="m-auto h-48 w-auto pb-10 md:mr-0 md:-ml-2 md:mt-0 md:h-auto short:ml-1 short:h-36"
+        className="m-auto h-36 w-auto pr-8 pb-10 md:mb-0 md:mr-0 md:-ml-2 md:mt-0 md:h-auto md:pr-0 short:ml-1"
       ></img>
       <div
-        className="overflow-hidden md:overflow-y-hidden short:overflow-y-auto"
+        className="overflow-hidden md:overflow-y-hidden short:overflow-y-auto short:pt-4"
         ref={emblaRef}
       >
-        <div className="flex flex-row md:h-full md:flex-col md:justify-evenly md:gap-12 short:gap-0">
+        <div className="flex flex-row md:h-full md:flex-col md:justify-evenly md:gap-32 short:gap-0">
           <div className="mx-4 flex w-full flex-none flex-col items-center md:mx-0">
             <div
               onClick={() => {
@@ -151,7 +151,7 @@ export default function Carousel() {
               scrollPrev={scrollPrev}
             />
           </div>
-          <div className="mx-4 flex w-full flex-none flex-col items-center md:mx-0">
+          {/* <div className="mx-4 flex w-full flex-none flex-col items-center md:mx-0">
             <div
               onClick={() => setSelectedIndex([3])}
               className="slide-container z-10 flex cursor-pointer flex-col items-center justify-between"
@@ -165,7 +165,7 @@ export default function Carousel() {
               scrollNext={scrollNext}
               scrollPrev={scrollPrev}
             />
-          </div>
+          </div> */}
         </div>
       </div>
       {
