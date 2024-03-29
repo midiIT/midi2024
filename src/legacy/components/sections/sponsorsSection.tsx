@@ -9,6 +9,7 @@ import Teltonika from "../../public/sponsors/teltonika.svg";
 import Bentley from "../../public/sponsors/bentley.png";
 import NordCurrent from "../../public/sponsors/nordcurrent.png";
 import Luminor from "../../public/sponsors/luminor.svg";
+import Shift4 from "../../public/sponsors/shift4.svg";
 import MadeInVilnius from "../../public/sponsors/miv.png";
 
 var goldenSponsors = [
@@ -77,6 +78,12 @@ var bronzeSponsors = [
     src: WU,
     alt: "Western Union logotipas",
     className: "basis-1/6 scale-75",
+  },
+  {
+    href: "https://www.shift4.com/lt",
+    src: Shift4,
+    alt: "Shift4 logotipas",
+    className: "basis-1/6",
   }
 ];
 
