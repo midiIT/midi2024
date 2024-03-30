@@ -10,7 +10,10 @@ import Bentley from "../../public/sponsors/bentley.png";
 import NordCurrent from "../../public/sponsors/nordcurrent.png";
 import Luminor from "../../public/sponsors/luminor.svg";
 import Shift4 from "../../public/sponsors/shift4.svg";
-import MadeInVilnius from "../../public/sponsors/miv.png";
+import PWC from "../../public/sponsors/pwc.png";
+import Wix from "../../public/sponsors/wix.svg";
+import VTeX from "../../public/sponsors/vtex.png";
+import Neara from "../../public/sponsors/neara.png";
 
 var goldenSponsors = [
   {
@@ -87,6 +90,33 @@ var bronzeSponsors = [
   }
 ];
 
+var standardSponsors = [
+  {
+    href: "https://www.pwc.com/lt/en.html",
+    src: PWC,
+    alt: "PWC logotipas",
+    className: "basis-1/4",
+  },
+  {
+    href: "https://www.instagram.com/wixvilnius/",
+    src: Wix,
+    alt: "Wix logotipas",
+    className: "scale-75 sm:scale-75 md:scale-75",
+  },
+  {
+    href: "https://vtex.lt",
+    src: VTeX,
+    alt: "VTeX logotipas",
+    className: "basis-1/4",
+  },
+  {
+    href: "https://neara.com/how-it-works/ ",
+    src: Neara,
+    alt: "Neara logotipas",
+    className: "basis-1/4",
+  },
+];
+
 // var partners = [
 //   {
 //     href: "https://madeinvilnius.lt/",
@@ -99,7 +129,7 @@ var bronzeSponsors = [
 export default function SponsorsSection() {
   return (
     <div>
-      <p className="text-center text-5xl md:text-7xl">Auksiniai rėmėjai</p>
+      <p className="text-center text-5xl md:text-7xl mb-6">Auksiniai rėmėjai</p>
       <div className="mx-16 flex flex-wrap place-items-center justify-around justify-items-center gap-8 align-middle">
         {goldenSponsors.map((sponsor, idx) => (
           <Sponsor
@@ -138,9 +168,9 @@ export default function SponsorsSection() {
         ))}
       </div>
       <div className="my-4 h-2 bg-slate-600/30"></div>
-      {/* <p className="text-center text-5xl md:text-7xl">Partneriai</p>
+      <p className="text-center text-5xl md:text-7xl">Standartiniai rėmėjai</p>
       <div className="m-8 flex flex-wrap place-items-center justify-around justify-items-center gap-8 align-middle">
-        {partners.map((sponsor, idx) => (
+        {standardSponsors.map((sponsor, idx) => (
           <Sponsor
             href={sponsor.href}
             src={sponsor.src}
@@ -149,7 +179,7 @@ export default function SponsorsSection() {
             className={sponsor.className}
           ></Sponsor>
         ))}
-      </div> */}
+      </div>
     </div>
   );
 }
