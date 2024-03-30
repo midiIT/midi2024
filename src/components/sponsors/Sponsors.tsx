@@ -3,7 +3,7 @@ import { SponsorType } from "./Types.ts"
 import './styles.css'
 
 export default function Sponsors() {
-    const sponsors: { gold: SponsorType[], silver: SponsorType[], bronze: SponsorType[], standard: SponsorType[] } = {
+    const sponsors: { gold: SponsorType[], silver: SponsorType[], bronze: SponsorType[], standard: SponsorType[], partners: SponsorType[] } = {
 
         // TODO: change logos
         gold: [
@@ -88,18 +88,38 @@ export default function Sponsors() {
                 url: 'https://neara.com/',
                 logo: 'https://midi.lt/2023/_next/static/media/bentley.8296207b.png?w=640&q=75'
             },
+        ],
+        partners: [
+            {
+                title: 'badmintono_centras',
+                url: 'https://badmintonocentras.lt/',
+                logo: 'https://midi.lt/2023/_next/static/media/bentley.8296207b.png?w=640&q=75'
+            },
+            {
+                title: 'smutis',
+                url: 'https://smutis.lt/',
+                logo: 'https://midi.lt/2023/_next/static/media/bentley.8296207b.png?w=640&q=75'
+            },
+            {
+                title: 'pepsi',
+                url: 'https://www.pepsi.com/',
+                logo: 'https://midi.lt/2023/_next/static/media/bentley.8296207b.png?w=640&q=75'
+            },
         ]
     }
 
     return (
-        <div className="flex justify-center items-center" style={{minHeight: "100vh", backgroundColor: "rgb(15 23 42)"}}>
+        <div className="flex justify-center items-center" style={{minHeight: "100vh", backgroundColor: "rgb(15 23 42)", paddingTop: '2rem'}}>
             <div>
+                {/* Gold sponsors */}
                 <p className="mb-8 text-center text-5xl md:text-7xl text-white sponsor--font">Auksiniai rėmėjai</p>
                 <div className="flex flex-wrap justify-center">
                     {sponsors.gold.map(sponsor =>
                         (<Sponsor key={sponsor.title} sponsor={sponsor}/>)
                     )}
                 </div>
+
+                {/* Silver sponsors */}
                 <div className="my-4 h-2 bg-slate-600/30" style={{width: "98%", margin: "auto"}}></div>
                 <p className="mb-8 text-center text-5xl md:text-7xl text-white sponsor--font">Sidabriniai rėmėjai</p>
                 <div className="flex flex-wrap justify-center">
@@ -107,6 +127,8 @@ export default function Sponsors() {
                         (<Sponsor key={sponsor.title} sponsor={sponsor}/>)
                     )}
                 </div>
+
+                {/* Bronze sponsors */}
                 <div className="my-4 h-2 bg-slate-600/30" style={{width: "98%", margin: "auto"}}></div>
                 <p className="mb-8 text-center text-5xl md:text-7xl text-white sponsor--font">Bronziniai rėmėjai</p>
                 <div className="flex flex-wrap justify-center">
@@ -114,10 +136,21 @@ export default function Sponsors() {
                         (<Sponsor key={sponsor.title} sponsor={sponsor}/>)
                     )}
                 </div>
+
+                {/* Standard sponsors */}
                 <div className="my-4 h-2 bg-slate-600/30" style={{width: "98%", margin: "auto"}}></div>
                 <p className="mb-8 text-center text-5xl md:text-7xl text-white sponsor--font">Standartiniai rėmėjai</p>
                 <div className="flex flex-wrap justify-center">
                     {sponsors.standard.map(sponsor =>
+                        (<Sponsor key={sponsor.title} sponsor={sponsor}/>)
+                    )}
+                </div>
+
+                {/* Partners */}
+                <div className="my-4 h-2 bg-slate-600/30" style={{width: "98%", margin: "auto"}}></div>
+                <p className="mb-8 text-center text-5xl md:text-7xl text-white sponsor--font">Partneriai</p>
+                <div className="flex flex-wrap justify-center">
+                    {sponsors.partners.map(sponsor =>
                         (<Sponsor key={sponsor.title} sponsor={sponsor}/>)
                     )}
                 </div>
