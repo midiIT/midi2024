@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/TextLayer.css";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-import { render } from "react-dom";
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
 
 const options = {
@@ -11,26 +10,14 @@ const options = {
 };
 
 export default function ViewPDF(props: { pdfLocation: string }) {
-  const [file, setFile] = useState(props.pdfLocation);
+  const [file, _setFile] = useState(props.pdfLocation);
   const [numPages, setNumPages] = useState(null);
-  const [pageNumber, setPageNumber] = useState(1);
+  const [_pageNumber, setPageNumber] = useState(1);
   const size = useWindowSize();
 
   function onDocumentLoadSuccess({ numPages }: any) {
     setNumPages(numPages);
     setPageNumber(1);
-  }
-
-  function changePage(offset: number) {
-    setPageNumber((prevPageNumber) => prevPageNumber + offset);
-  }
-
-  function previousPage() {
-    changePage(-1);
-  }
-
-  function nextPage() {
-    changePage(1);
   }
 
   return (
@@ -94,7 +81,7 @@ export default function ViewPDF(props: { pdfLocation: string }) {
           }}
         >
           {/* <Page pageNumber={1} scale={size.height*0.001}/> add scaling math height={size.height*0.52} width={size.width*0.5} */}
-          {Array.from(new Array(numPages), (el, index) => (
+          {Array.from(new Array(numPages), (_el, index) => (
             <Page
               width={size.width > 768 ? size.width * 0.75 : size.width * 0.9}
               // scale={1}

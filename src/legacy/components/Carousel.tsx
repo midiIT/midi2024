@@ -1,15 +1,8 @@
 import useEmblaCarousel from "embla-carousel-react";
 import { useState, useEffect, useCallback } from "react";
-import {
-  HeartIcon,
-  CalendarDaysIcon,
-  WrenchScrewdriverIcon,
-  PresentationChartLineIcon,
-} from "@heroicons/react/24/outline";
 import TeamSectionIcon from "../public/icons/TeamSection.webp";
 import EventSectionIcon from "../public/icons/EventSection.webp";
 import SponsorSectionIcon from "../public/icons/SponsorSection.webp";
-import ArticleSectionIcon from "../public/icons/ArticleSection.webp";
 import Navigationbuttons from "../components/NavigationButtons";
 import MIDILogotipas from "../public/MIDIlogo.webp"
 
@@ -26,8 +19,6 @@ export default function Carousel() {
     // speed: 20,
     inViewThreshold: 0.7,
   });
-
-  const [currentView, setCurrentView] = useState("events");
   const [selectedIndex, setSelectedIndex] = useState<number[]>([0]);
   const [scrollSnaps, setScrollSnaps] = useState([]);
 

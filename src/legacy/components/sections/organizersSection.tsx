@@ -27,7 +27,6 @@ import Gintare from "../../public/media/gintare.webp";
 import Aiste from "../../public/media/aiste.webp";
 import Ainius from "../../public/media/ainius.webp";
 import Edvinas from "../../public/media/edvinas.webp";
-import Kamilė from "../../public/media/kamile.webp";
 import Ricardas from "../../public/media/ricardas.webp";
 import Gustas from "../../public/media/gustas.jpg";
 import Paulina from "../../public/media/paulina.jpg";

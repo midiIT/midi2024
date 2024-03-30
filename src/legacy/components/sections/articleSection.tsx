@@ -1,4 +1,4 @@
-import React, { useState, Suspense, lazy } from "react";
+import { useState, Suspense, lazy } from "react";
 import { createPortal } from "react-dom";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import placeholder from "../../public/media/placeholder.png";
@@ -12,7 +12,7 @@ export default function ArticleSection(props: {
   pdfLocation: string;
 }) {
   const [show, setShow] = useState(false);
-  const { width, height } = useWindowDimensions();
+  const { width } = useWindowDimensions();
 
   return (
     <div className="flex flex-col text-xl sm:text-2xl md:text-2xl lg:text-3xl">

@@ -2,24 +2,17 @@ import { format } from "date-fns";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGamepad,
-  faAddressCard,
   faBasketball,
-  faDiamond,
   faChess,
-  faMapLocation,
   faBrain,
-  faUsers,
   faIdCardAlt,
   faCube,
 } from "@fortawesome/free-solid-svg-icons";
-import asseco from "../../asseco_white.svg";
-
 import lanparty from "../../public/events/lanparty.png";
 import ClosingEvent from "../../public/events/uzdarymas.png";
 import Chess from "../../public/events/sachmatai.png";
 import Imones from "../../public/events/imoniu_muge.png";
 import Decathlon from "../../public/events/decathlon.png";
-import Orientational from "../../public/events/orientacines.png";
 import Protmusis from "../../public/events/protmusis.png";
 import Sport from "../../public/events/sporto_dienos.png";
 

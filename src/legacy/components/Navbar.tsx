@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import useWindowDimensions from "../hooks/useWindowDimensions";
 
 export default function Nav() {
-  const { width, height } = useWindowDimensions();
+  const { height } = useWindowDimensions();
 
   useEffect(() => {
     function handleScroll() {
