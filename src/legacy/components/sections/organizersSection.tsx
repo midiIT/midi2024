@@ -28,7 +28,12 @@ import Aiste from "../../public/media/aiste.webp";
 import Ainius from "../../public/media/ainius.webp";
 import Edvinas from "../../public/media/edvinas.webp";
 import Kamilė from "../../public/media/kamile.webp";
-
+import Ricardas from "../../public/media/ricardas.webp";
+import Gustas from "../../public/media/gustas.jpg";
+import Paulina from "../../public/media/paulina.jpg";
+import Monika from "../../public/media/monika.jpg";
+import Nikita from "../../public/media/nikita.jpg";
+import GintareA from "../../public/media/gintare.png";
 
 
 export default function OrganizersSection() {
@@ -273,7 +278,7 @@ export default function OrganizersSection() {
           title="Kūrybinių reikalų vadovė"
           imgsrc={Greta}
           phone="+370 63 096 076"
-          email="NaN"
+          email="kurybine@midi.lt"
           placeholder={"blur"}
         />
       </div>
@@ -306,6 +311,57 @@ export default function OrganizersSection() {
           email="offline@midi.lt"
           placeholder={"blur"}
         />
+      </div>
+      <p className="my-8 text-center text-6xl">MIDI Mentoriai</p>
+      <div className="flex flex-wrap justify-center gap-8">
+        <Avatar
+          className="basis-full md:basis-1/3 lg:basis-1/4"
+          name="Ričardas Čubukinas"
+          title="LAN mentorius"
+          imgsrc={Ricardas}
+          phone=""
+          email=""
+          />
+        <Avatar
+          className="basis-full md:basis-1/3 lg:basis-1/4"
+          name="Gustas Štaševskis"
+          title="IT mentorius"
+          imgsrc={Gustas}
+          phone=""
+          email=""
+          />
+        <Avatar
+          className="basis-full md:basis-1/3 lg:basis-1/4"
+          name="Nikita Gladčenko"
+          title="Organizatorių mentorius"
+          imgsrc={Nikita}
+          phone=""
+          email=""
+          />
+        <Avatar
+          className="basis-full md:basis-1/3 lg:basis-1/4"
+          name="Gintarė Aliukonytė"
+          title="Komunikacijos mentorė"
+          imgsrc={GintareA}
+          phone=""
+          email=""
+          />
+        <Avatar
+          className="basis-full md:basis-1/3 lg:basis-1/4"
+          name="Paulina Bilinskaitė"
+          title="HR ir vadovai mentorė"
+          imgsrc={Paulina}
+          phone=""
+          email=""
+          />
+        <Avatar
+          className="basis-full md:basis-1/3 lg:basis-1/4"
+          name="Monika Barauskaitė"
+          title="HR ir komunikacijos mentorė"
+          imgsrc={Monika}
+          phone=""
+          email=""
+          />
       </div>
     </div>
   );
