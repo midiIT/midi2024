@@ -6,7 +6,7 @@ import Domas from "../../public/media/domas.webp";
 import Rokas from "../../public/media/rokas.webp";
 import Augustas from "../../public/media/augustas.webp";
 import Olen from "../../public/media/olen.webp";
-import Titas from "../../public/media/titas.webp";
+import Titas from "../../public/media/titas.png";
 import Vaiva from "../../public/media/vaiva.webp";
 import MantasG from "../../public/media/mantasG.webp";
 import Nojus from "../../public/media/nojus.webp";
@@ -108,7 +108,7 @@ export default function OrganizersSection() {
           className="basis-full md:basis-1/3 lg:basis-1/4"
           name="Titas Masys"
           title="Roko operos vadovas"
-          imgsrc={Augustina}
+          imgsrc={Titas}
           phone="+370 69 535 871"
           email="ro.vadovas@midi.lt"
           placeholder={"blur"}
