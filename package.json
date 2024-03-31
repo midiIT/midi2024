@@ -2,6 +2,7 @@
   "name": "midi2024",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://midi.lt/2024test/",
   "type": "module",
   "scripts": {
     "dev": "vite --host",

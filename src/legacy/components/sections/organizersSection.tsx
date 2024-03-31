@@ -348,7 +348,7 @@ export default function OrganizersSection() {
         <Avatar
           className="basis-full md:basis-1/3 lg:basis-1/4"
           name="Paulina Bilinskaitė"
-          title="HR ir vadovai mentorė"
+          title="HR ir vadovų mentorė"
           imgsrc={Paulina}
           phone=""
           email=""
