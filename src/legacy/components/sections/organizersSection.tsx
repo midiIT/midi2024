@@ -232,15 +232,6 @@ export default function OrganizersSection() {
           email="marketingas@midi.lt"
           placeholder={"blur"}
         />
-        <Avatar
-          className="basis-full md:basis-1/3 lg:basis-1/4"
-          name="Edvinas Burba"
-          title="Orientacinių varžybų vadovas"
-          imgsrc={Edvinas}
-          phone="+370 68 696 553"
-          email="orientacines@midi.lt"
-          placeholder={"blur"}
-        />
       </div>
       <p className="my-8 text-center text-6xl">MIDI Komunikacija</p>
       <div className="flex flex-wrap justify-center gap-8">
