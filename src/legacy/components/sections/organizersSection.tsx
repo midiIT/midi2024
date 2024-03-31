@@ -262,15 +262,6 @@ export default function OrganizersSection() {
           email="press@midi.lt"
           placeholder={"blur"}
         />
-        <Avatar
-          className="basis-full md:basis-1/3 lg:basis-1/4"
-          name="Greta Korsakaitė"
-          title="Kūrybinių reikalų vadovė"
-          imgsrc={Greta}
-          phone="+370 63 096 076"
-          email="kurybine@midi.lt"
-          placeholder={"blur"}
-        />
       </div>
       <p className="my-8 text-center text-6xl">MIDI LAN Party vadovai</p>
       <div className="flex flex-wrap justify-center gap-8">
