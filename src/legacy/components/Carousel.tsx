@@ -90,7 +90,7 @@ export default function Carousel() {
         className="overflow-hidden md:overflow-y-hidden short:overflow-y-auto short:pt-4"
         ref={emblaRef}
       >
-        <div className="flex flex-row md:h-full md:flex-col md:justify-evenly md:gap-32 short:gap-0">
+        <div className="flex flex-row md:h-full md:flex-col md:justify-evenly md:gap-16 sm:gap-8">
           <div className="mx-4 flex w-full flex-none flex-col items-center md:mx-0">
             <div
               onClick={() => {
