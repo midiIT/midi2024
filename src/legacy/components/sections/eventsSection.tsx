@@ -7,18 +7,21 @@ import {
   faBrain,
   faIdCardAlt,
   faCube,
+  faMapLocationDot,
+  faUsers,
 } from "@fortawesome/free-solid-svg-icons";
-import lanparty from "../../public/events/lanparty.png";
-import ClosingEvent from "../../public/events/uzdarymas.png";
-import Chess from "../../public/events/sachmatai.png";
-import Imones from "../../public/events/imoniu_muge.png";
-import Decathlon from "../../public/events/decathlon.png";
-import Protmusis from "../../public/events/protmusis.png";
-import Sport from "../../public/events/sporto_dienos.png";
+import lanparty from "../../public/events/lanparty.webp";
+import ClosingEvent from "../../public/events/uzdarymas.webp";
+import Chess from "../../public/events/sachmatai.webp";
+import Imones from "../../public/events/imoniu_muge.webp";
+import Decathlon from "../../public/events/decathlon.webp";
+import Protmusis from "../../public/events/protmusis.webp";
+import Sport from "../../public/events/sporto_dienos.webp";
+import Orientacines from "../../public/events/orientacines.webp";
 
 var events = [
   {
-    name: "MIDI LAN Party",
+    name: "MIDI LAN Party", 
     description: `👾 Margi pikseliai, klavišų garsas, pelės paspaudimai, žaidimo kauliukai, žetonų barškėjimas - ar esi pasiruošęs patirti visa tai ir daugiau vienoje vietoje?
     👉 MIDI kviečia visus video žaidimų, stalo žaidimų, sportinio pokerio entuziastus ir mėgėjus balandžio 20-21 dienomis dalyvauti kasmetiniame MIDI LAN Party ir laimėti įvairių prizų!
     🎮 Visus komandinę dvasią jaučiančius žaidėjus kviečiame burti komandas ir išbandyti savo jėgas pagrindiniuose LAN turnyruose - League Of Legends, Valorant ir Counter-Strike 2. Nepamiršk pakviesti ir palaikymo komandos, nes renginio metu bus užtikrintos tribūnos palaikymui!
@@ -120,16 +123,41 @@ var events = [
     more: "https://www.facebook.com/events/1083365632962314",
   },
   {
-    name: "MIDI Uždarymo vakaras | Closing Event",
-    description: `Uždarymo vakaras - tai paskutinis Matematikos ir informatikos fakulteto dienų renginys, kviečiantis visus kartu uždaryti MIDI savaitę. Tai puiki galimybė vienam vakarui atsitraukti nuo akademinių iššūkių, darbų ir pasinerti į šventės sūkurį, kupiną geros nuotaikos, daug juoko bei muzikos, kuri kiekvieną kvies į šokių aikštelę ir užtikrins, kad vakarėlis tęstųsi iki paryčių!
-
-    Tad skubėk savo ir draugų kalendoriuose pasižymėti balandžio 27 d., nes laukia įsimintinas vakaras, kurio negali praleisti!
+    name: "MIDI Orientacinės varžybos | Orienteering competition",
+    description: `Ar girdėjai šnabždesį, gal jau spėjai pastebėti ženklus?👀
+    🔎MIDI 2024 orientacinės varžybos pagaliau atkeliavo čia!🗺️
+    🕵🏼‍♀️Ar esi pasiruošęs pasinerti į paslaptingą Vilniaus vakarą bei kartu su savo komanda įveikti detektyvinę užduotį? Griebk savo draugus, žibintuvėlį, popieriaus lapą, užkandžius bei skaičiuotuvą ir pasileisk į šį nuotykių kupiną vakarą! Geriausios trys komandos bus apdovanotos prizais, tad nedelsk ir išbandyk savo jėgas ir įgūdžius nematomojoje Vilniaus pusėje!🕵🏻‍♂️
+    Daugiau informacijos jau netrukus.
     
-    Renginio data: 2024-04-27
-    Durys atidaromos: 19:00
-    Renginio pradžia: 20:00
-    Renginio vieta: Legendos klubas (Kalvarijų g. 85, Vilnius)`,
-    time: format(new Date("2023-04-27T20:00:00"), "yyyy-MM-dd HH:mm"),
+    🇬🇧
+
+    Have you heard the whispers, maybe you already noticed the signs?👀
+    🔎MIDI 2024 Orienteering Competition is finally here!🗺️
+    🕵🏼‍♀️Are you ready to immerse yourself in the mysterious evening of Vilnius and solve a mystery with your team? Grab your friends, a flashlight, a piece of paper, some snacks, a calculator and head out for an evening full of adventures! Three best teams will be awarded with prizes, so don‘t delay and test your strength and skills in the dark side of Vilnius!🕵🏻‍♂️
+    More information is coming soon.`,
+    time: "2024-04-26 18:00",
+    photo: Orientacines,
+    location: "Centras/Senamiestis",
+    more: "https://www.facebook.com/events/335718952392132",
+  },
+  {
+    name: "MIDI Uždarymo vakaras | Closing Event",
+    description: `🎭Uždarymo vakaras - tai paskutinis MIDI renginys, kviečiantis visus kartu užbaigti daugybę įspūdžių studentams bei jų draugams palikusią savaitę!
+    Tai puiki proga ne tik atsitraukti nuo akademinių iššūkių ir darbų, bet ir pasinerti į nepamirštamą šventės sūkurį! 🎶Energinga muzika, profesionalūs DJ ir erdvi šokių aikštelė kvies visus atsipalaiduoti ir išlaisvinti savo vidinį šokėją.💃🏻🕺🏼
+    🎤Pasiruoškite ne tik pašokti iki paryčių, bet ir pasimėgauti nepamirštama humoro doze – MIDI finalo vakarą laukia ir staigmenų kupinas stand-up pasirodymas!
+    Renginio tema - Kaukių Balius!🎭 Neturi kaukės? Nesijaudink, mes parūpinsim!
+    🎉Laukia įsimintinas vakaras, kurio negali praleisti, tad skubėk savo ir draugų kalendoriuose pasižymėti📝 balandžio 27 d., ir susitinkam muzikiniame teatre ,,Legendos Klubas”! (durys atidaromos 19:00)
+    Bilietai ir daugiau informacijos jau netrukus.
+    
+    🇬🇧
+
+    MIDI week – a vibrant kaleidoscope of adventures, excitement, and unforgettable moments. What better way to crown this celebration than with a grand closing party?🎭
+    This is a perfect opportunity to not only step away from academic challenges and work but also to immerse yourself in an unforgettable whirlpool of celebration! 🎶Energetic music, professional DJs, and a spacious dance floor will invite everyone to relax and unleash their inner dancer.💃🏻🕺🏼
+    🎤Get ready to not only dance until dawn, but also enjoy an unforgettable dose of humor – the MIDI finale will also feature a surprise-filled stand-up performance!
+    The theme of the ball is Masquerade!🎭 Don't have a mask? Don't worry, you'll have an opportunity to get one at the event!
+    🎉So hurry up and mark📝 April 27th in your and your friends' calendars and let's meet in the "Legendos Klubas", because an unforgettable evening awaits you! (Doors open at 19:00)
+    Tickets and more information are coming soon.`,
+    time: format(new Date("2024-04-27T20:00:00"), "yyyy-MM-dd HH:mm"),
     photo: ClosingEvent,
     location: "Legendos klubas",
   }
@@ -196,6 +224,20 @@ export default function EventsSection() {
             icon={faBrain}
             className="aboutEventSelector rounded-full border-2 p-4 text-4xl opacity-50 transition-all hover:-mb-2 hover:scale-125 hover:border-4"
             onClick={() => Show(5)}
+          />
+        </div>
+        <div className="flex basis-1/4 justify-center lg:basis-0">
+          <FontAwesomeIcon
+            icon={faMapLocationDot}
+            className="aboutEventSelector rounded-full border-2 p-4 text-4xl opacity-50 transition-all hover:-mb-2 hover:scale-125 hover:border-4"
+            onClick={() => Show(6)}
+          />
+        </div>
+        <div className="flex basis-1/4 justify-center lg:basis-0">
+          <FontAwesomeIcon
+            icon={faUsers}
+            className="aboutEventSelector rounded-full border-2 p-4 text-4xl opacity-50 transition-all hover:-mb-2 hover:scale-125 hover:border-4"
+            onClick={() => Show(7)}
           />
         </div>
       </div>
