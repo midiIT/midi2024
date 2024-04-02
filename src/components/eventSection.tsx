@@ -17,6 +17,7 @@ import RONote from "../images/noteRO.svg";
 import SachmataiNote from "../images/noteSachmatai.svg";
 import SportodienosNote from "../images/noteSportodienos.svg";
 import UzdarymasNote from "../images/noteUzdarymas.svg";
+import LANBanner from "../images/lanparty.webp";
 
 export default function EventSection() {
   const [activeNote, setActiveNote] = useState(null);
@@ -46,9 +47,9 @@ export default function EventSection() {
       id: "LAN_note",
       top: "5%",
       left: "10%",
-      eventName: "Event numero uno",
+      eventName: "MIDI Lan Party",
       image: LANNote,
-      banner: CatNote,
+      banner: LANBanner,
       text: "Testuojamas tekstas note'e nomer viens",
       rotate: "rotate(-10deg)",
       clickable: true,
@@ -77,8 +78,8 @@ export default function EventSection() {
     },
     {
       id: "Orientacines_note",
-      top: "20%",
-      left: "70%",
+      top: "10%",
+      left: "80%",
       eventName: "Event numero quatro",
       image: OrientacinesNote,
       banner: placeholderBanner,
@@ -158,7 +159,8 @@ export default function EventSection() {
 
   const toggleNote = (noteId) => {
     const note = notes.find((note) => note.id === noteId);
-    if (note && note.clickable) { // Check if note is clickable
+    if (note && note.clickable) {
+      // Check if note is clickable
       setActiveNote(activeNote === noteId ? null : noteId);
     }
   };
@@ -176,8 +178,7 @@ export default function EventSection() {
     const cp2Y = cp1Y;
 
     return `M ${startX},${startY} C ${cp1X},${cp1Y} ${cp2X},${cp2Y} ${endX},${endY}`;
-};
-
+  };
 
   const updatePaths = () => {
     const newPaths = connections
@@ -242,7 +243,9 @@ export default function EventSection() {
       {notes.map((note, index) => (
         <div
           key={note.id}
-          className={`absolute z-10 w-[10vw] h-[10vh] ${note.clickable ? 'cursor-pointer' : ''}`}
+          className={`absolute z-10 w-[12vw] h-[12vh] ${
+            note.clickable ? "cursor-pointer" : ""
+          }`}
           style={{
             top: note.top,
             left: note.left,
@@ -281,39 +284,52 @@ export default function EventSection() {
       </svg>
       {activeNote && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 overflow-auto z-20">
-          <div className="relative" ref={modalContentRef}>
+          <div
+            className="relative w-[80vw] h-[90vh] mx-auto"
+            ref={modalContentRef}
+          >
+            {/* Ensure the wrapper matches the intended image size */}
             <img
               src={BlankNote}
               alt="Event Detail"
-              className="block mx-auto w-64 h-64"
+              className="w-full h-full object-cover"
             />
-            {/* <div className="absolute inset-0 flex flex-col justify-between pt-4">
-              <h2 className="text-l text-black font-bold text-center">
+            <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-between p-4">
+              {/* Overlay content, using padding for positioning instead of margin */}
+              <h2 className="text-xl md:text-2xl lg:text-3xl text-white font-bold text-center">
                 {notes.find((note) => note.id === activeNote)?.eventName}
               </h2>
-              <div className="flex justify-between px-4">
-                <div className="w-1/2 bg-red-500">
+
+              {/* Responsive container for banner and buttons */}
+              <div className="flex-1 flex flex-col items-center justify-center space-y-4">
+                {/* Banner */}
+                <div className="w-3/4 md:w-1/2 bg-red-500">
                   <img
                     src={notes.find((note) => note.id === activeNote)?.banner}
                     alt="Event Banner"
-                    className="block mx-auto"
+                    className="w-full h-auto"
                   />
                 </div>
-                <div className="flex flex-col w-1/2 bg-blue-500">
-                  <div className="m-4 rounded-full border-4 border-midiblue px-4 pt-2 pb-4 text-center text-xs font-semibold text-midiblue transition-all hover:border-white hover:text-white">
-                    Daugiau / Read More
-                  </div>
-                  <div className="m-4 rounded-full border-4 border-midiblue px-4 pt-2 pb-4 text-center text-xs font-semibold text-midiblue transition-all hover:border-white hover:text-white">
-                    Registracija / Register
-                  </div>
-                </div>
-              </div> */}
 
-              {/* Description at the bottom */}
-              {/* <div className="text-base text-black justify-center text-center p-4 overflow-auto">
+                {/* Buttons */}
+                <div className="flex flex-col w-3/4 md:w-1/2 items-center space-y-2">
+                  <button className="w-full py-2 bg-blue-500 text-white rounded-full">
+                    Daugiau / Read More
+                  </button>
+                  <button className="w-full py-2 bg-blue-500 text-white rounded-full">
+                    Registracija / Register
+                  </button>
+                </div>
+              </div>
+
+              {/* Scrollable text description */}
+              <div
+                className="text-white text-center overflow-auto p-2"
+                style={{ maxHeight: "20%" }}
+              >
                 <p>{notes.find((note) => note.id === activeNote)?.text}</p>
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
       )}
