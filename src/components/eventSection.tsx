@@ -7,6 +7,16 @@ import GreenNote from "../images/greenNote.png";
 import OrangeNote from "../images/orangeNote.png";
 import PurpleNote from "../images/purpleNote.png";
 import CatNote from "../images/catTest.webp";
+import BlankNote from "../images/noteBlank.svg";
+import LANNote from "../images/noteLan.svg";
+import DecathlonNote from "../images/noteDecathlon.svg";
+import ImoniuMugeNote from "../images/noteImoniuMuge.svg";
+import OrientacinesNote from "../images/noteOrientacines.svg";
+import ProtmusisNote from "../images/noteProtmusis.svg";
+import RONote from "../images/noteRO.svg";
+import SachmataiNote from "../images/noteSachmatai.svg";
+import SportodienosNote from "../images/noteSportodienos.svg";
+import UzdarymasNote from "../images/noteUzdarymas.svg";
 
 export default function EventSection() {
   const [activeNote, setActiveNote] = useState(null);
@@ -33,68 +43,113 @@ export default function EventSection() {
   // Define your notes and their positions here
   const [notes, setNotes] = useState([
     {
-      id: "note1",
+      id: "LAN_note",
       top: "5%",
       left: "10%",
       eventName: "Event numero uno",
-      image: PurpleNote,
+      image: LANNote,
       banner: CatNote,
       text: "Testuojamas tekstas note'e nomer viens",
       rotate: "rotate(-10deg)",
       clickable: true,
     },
     {
-      id: "note2",
+      id: "Decathlon_note",
       top: "50%",
       left: "5%",
       eventName: "Event numero dos",
-      image: RedNote,
+      image: DecathlonNote,
       banner: placeholderBanner,
       text: "Testuojamas tekstas note'e",
       rotate: "rotate(10deg)",
       clickable: true,
     },
     {
-      id: "note3",
+      id: "Imoniu_note",
       top: "40%",
-      left: "40%",
+      left: "30%",
       eventName: "Event numero tres",
-      image: GreenNote,
+      image: ImoniuMugeNote,
       banner: placeholderBanner,
       text: "Testuojamas tekstas note'e",
       rotate: "rotate(20deg)",
       clickable: true,
     },
     {
-      id: "note4",
+      id: "Orientacines_note",
       top: "20%",
       left: "70%",
       eventName: "Event numero quatro",
-      image: OrangeNote,
+      image: OrientacinesNote,
       banner: placeholderBanner,
       text: "Testuojamas tekstas note'e wooo per daug teksto aaajajajasjdaksdjaskjdkajsdkasjdkasjd",
       rotate: "rotate(-20deg)",
       clickable: true,
     },
     {
-      id: "catNote",
+      id: "Protmusis_note",
+      top: "50%",
+      left: "80%",
+      eventName: "Event numero quatro",
+      image: ProtmusisNote,
+      banner: placeholderBanner,
+      text: "Testuojamas tekstas note'e wooo per daug teksto aaajajajasjdaksdjaskjdkajsdkasjdkasjd",
+      rotate: "rotate(-20deg)",
+      clickable: true,
+    },
+    {
+      id: "Sachmatai_note",
       top: "70%",
+      left: "20%",
+      eventName: "Event numero quatro",
+      image: SachmataiNote,
+      banner: placeholderBanner,
+      text: "Testuojamas tekstas note'e wooo per daug teksto aaajajajasjdaksdjaskjdkajsdkasjdkasjd",
+      rotate: "rotate(-20deg)",
+      clickable: true,
+    },
+    {
+      id: "Sportodienos_note",
+      top: "75%",
       left: "60%",
-      image: CatNote,
-      clickable: false,
-    }
+      eventName: "Event numero quatro",
+      image: SportodienosNote,
+      banner: placeholderBanner,
+      text: "Testuojamas tekstas note'e wooo per daug teksto aaajajajasjdaksdjaskjdkajsdkasjdkasjd",
+      rotate: "rotate(-20deg)",
+      clickable: true,
+    },
+    {
+      id: "Uzdarymas_note",
+      top: "40%",
+      left: "50%",
+      eventName: "Event numero quatro",
+      image: UzdarymasNote,
+      banner: placeholderBanner,
+      text: "Testuojamas tekstas note'e wooo per daug teksto aaajajajasjdaksdjaskjdkajsdkasjdkasjd",
+      rotate: "rotate(-20deg)",
+      clickable: true,
+    },
+    // {
+    //   id: "catNote",
+    //   top: "70%",
+    //   left: "60%",
+    //   image: CatNote,
+    //   clickable: false,
+    // }
   ]);
 
   // Define connections between notes by their IDs
   const [connections, setConnections] = useState([
-    { startId: "note1", endId: "note2" },
-    { startId: "note2", endId: "note3" },
-    { startId: "note3", endId: "note4" },
-    { startId: "note4", endId: "note1" },
-    { startId: "note1", endId: "note3" },
-    { startId: "note2", endId: "note4" },
-    { startId: "note4", endId: "catNote" },
-    { startId: "note1", endId: "catNote" }
+    { startId: "LAN_note", endId: "Decathlon_note" },
+    { startId: "Decathlon_note", endId: "Imoniu_note" },
+    { startId: "Imoniu_note", endId: "Orientacines_note" },
+    { startId: "Orientacines_note", endId: "Protmusis_note" },
+    { startId: "Protmusis_note", endId: "Sachmatai_note" },
+    { startId: "Sachmatai_note", endId: "Sportodienos_note" },
+    { startId: "Sportodienos_note", endId: "Uzdarymas_note" },
+    { startId: "Orientacines_note", endId: "LAN_note" },
+    { startId: "Sachmatai_note", endId: "Decathlon_note" },
   ]);
 
   const [paths, setPaths] = useState([]);
@@ -187,7 +242,7 @@ export default function EventSection() {
       {notes.map((note, index) => (
         <div
           key={note.id}
-          className={`absolute z-10 scale-[0.7] ${note.clickable ? 'cursor-pointer' : ''}`}
+          className={`absolute z-10 w-[10vw] h-[10vh] ${note.clickable ? 'cursor-pointer' : ''}`}
           style={{
             top: note.top,
             left: note.left,
@@ -228,11 +283,11 @@ export default function EventSection() {
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 overflow-auto z-20">
           <div className="relative" ref={modalContentRef}>
             <img
-              src={placeholderZoom}
+              src={BlankNote}
               alt="Event Detail"
-              className="block mx-auto w-96 h-96"
+              className="block mx-auto w-64 h-64"
             />
-            <div className="absolute inset-0 flex flex-col justify-between pt-4">
+            {/* <div className="absolute inset-0 flex flex-col justify-between pt-4">
               <h2 className="text-l text-black font-bold text-center">
                 {notes.find((note) => note.id === activeNote)?.eventName}
               </h2>
@@ -252,13 +307,13 @@ export default function EventSection() {
                     Registracija / Register
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               {/* Description at the bottom */}
-              <div className="text-base text-black justify-center text-center p-4 overflow-auto">
+              {/* <div className="text-base text-black justify-center text-center p-4 overflow-auto">
                 <p>{notes.find((note) => note.id === activeNote)?.text}</p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       )}
