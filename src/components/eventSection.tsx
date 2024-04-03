@@ -287,31 +287,53 @@ export default function EventSection() {
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 overflow-auto z-20">
           <div
             className="flex flex-row items-center justify-center mx-auto"
-            style={{ gap: "2vw", maxWidth: "80vw" }} // Set a maximum width and gap between items
+            style={{ gap: "2vw", maxWidth: "90vw" }} // Controls the maximum width of the container
             ref={modalContentRef}
           >
-            {/* Note content */}
+            {/* Note container with adjusted smaller dimensions */}
             <div
-              className="transform -rotate-2" // Slightly rotate the note
-              style={{ maxWidth: "35vw", maxHeight: "75vh" }} // Adjust size for responsiveness and to avoid excessive vertical extension
+              className="relative transform -rotate-2"
+              style={{ width: "35vw", height: "55vh" }} // Slightly reduced dimensions
             >
               <img
                 src={BlankNote}
                 alt="Note"
-                className="object-contain w-full h-full" // Ensure the image scales within its bounds
+                className="w-full h-full object-cover" // Ensures the note covers the specified dimensions
               />
+              {/* Overlay content for the note */}
+              <div className="absolute inset-0 flex flex-col justify-center items-center space-y-3 p-4">
+                <img
+                  src={notes.find((note) => note.id === activeNote)?.banner}
+                  alt="Event Banner"
+                  className="object-cover h-[15vh]" // Adjust the size to maintain proportionality
+                />
+                <button className="py-1 px-3 text-xs bg-blue-500 text-white rounded-full">
+                  Daugiau / Read More
+                </button>
+                <button className="py-1 px-3 text-xs bg-blue-500 text-white rounded-full">
+                  Registracija / Register
+                </button>
+              </div>
             </div>
 
-            {/* Clipboard content */}
             <div
-              className="transform rotate-2" // Slightly rotate the clipboard
-              style={{ maxWidth: "35vw", maxHeight: "75vh" }} // Match the note's size for consistency
+              className="relative transform rotate-2"
+              style={{ width: "35vw", height: "60vh" }} // Keeping the clipboard slightly smaller
             >
               <img
                 src={TeamClipboard}
                 alt="Clipboard"
-                className="object-contain w-full h-full" // Adjust scaling within its bounds
+                className="object-cover w-full h-full"
               />
+              {/* Text overlay for the clipboard */}
+              <div
+                className="absolute inset-0 p-4 flex justify-center items-start"
+                style={{ paddingTop: "10%" }}
+              >
+                <p className="text-white text-xs md:text-sm">
+                  {notes.find((note) => note.id === activeNote)?.text}
+                </p>
+              </div>
             </div>
           </div>
         </div>
