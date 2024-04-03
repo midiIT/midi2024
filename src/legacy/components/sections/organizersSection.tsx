@@ -6,7 +6,7 @@ import Domas from "../../public/media/domas.webp";
 import Rokas from "../../public/media/rokas.webp";
 import Augustas from "../../public/media/augustas.webp";
 import Olen from "../../public/media/olen.webp";
-import Titas from "../../public/media/titas.png";
+import Titas from "../../public/media/titas.webp";
 import Vaiva from "../../public/media/vaiva.webp";
 import MantasG from "../../public/media/mantasG.webp";
 import Nojus from "../../public/media/nojus.webp";

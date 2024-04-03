@@ -50,43 +50,43 @@ var bronzeSponsors = [
     href: "https://www.bentley.com/",
     src: Bentley,
     alt: "Bentley logo",
-    className: "basis-1/6 scale-75",
+    className: "basis-1/6 scale-125 sm:scale-125 md:scale-125 lg:scale-100",
   },
   {
     href: "http://www.nordcurrent.com/",
     src: NordCurrent,
     alt: "Nordcurrent logotipas",
-    className: "basis-1/6 scale-[45%]",
+    className: "basis-1/6 scale-[60%]",
   },
   {
     href: "https://www.luminor.lt/",
     src: Luminor,
     alt: "Luminor logotipas",
-    className: "basis-1/6 scale-75",
+    className: "basis-1/6 scale-125 sm:scale-125 md:scale-125 lg:scale-100",
   },
   {
     href: "https://www.coherentsolutions.com/",
     src: Coherent,
     alt: "Coherent logotipas",
-    className: "basis-1/6 scale-75",
+    className: "basis-1/6 scale-125 sm:scale-125 md:scale-125 lg:scale-100",
   },
   {
     href: "https://kpmg.com/lt/lt/home.html",
     src: Kpmg,
     alt: "Kpmg logotipas",
-    className: "basis-1/6 scale-75",
+    className: "basis-1/6 scale-125 sm:scale-125 md:scale-125 lg:scale-100",
   },
   {
     href: "https://careers.westernunion.com/wulithuania/",
     src: WU,
     alt: "Western Union logotipas",
-    className: "basis-1/6 scale-75",
+    className: "basis-1/6 scale-125 sm:scale-125 md:scale-125 lg:scale-100",
   },
   {
     href: "https://www.shift4.com/lt",
     src: Shift4,
     alt: "Shift4 logotipas",
-    className: "basis-1/6",
+    className: "basis-1/6 scale-125 sm:scale-125 md:scale-125 lg:scale-100",
   }
 ];
 
@@ -101,7 +101,7 @@ var standardSponsors = [
     href: "https://www.instagram.com/wixvilnius/",
     src: Wix,
     alt: "Wix logotipas",
-    className: "scale-75 sm:scale-75 md:scale-75",
+    className: "scale-50 md:scale-[0.7] lg:scale-75",
   },
   {
     href: "https://vtex.lt",
