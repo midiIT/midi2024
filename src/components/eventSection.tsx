@@ -18,6 +18,7 @@ import SachmataiNote from "../images/noteSachmatai.svg";
 import SportodienosNote from "../images/noteSportodienos.svg";
 import UzdarymasNote from "../images/noteUzdarymas.svg";
 import LANBanner from "../images/lanparty.webp";
+import TeamClipboard from "../images/clipboard-01.png";
 
 export default function EventSection() {
   const [activeNote, setActiveNote] = useState(null);
@@ -285,50 +286,32 @@ export default function EventSection() {
       {activeNote && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 overflow-auto z-20">
           <div
-            className="relative w-[80vw] h-[90vh] mx-auto"
+            className="flex flex-row items-center justify-center mx-auto"
+            style={{ gap: "2vw", maxWidth: "80vw" }} // Set a maximum width and gap between items
             ref={modalContentRef}
           >
-            {/* Ensure the wrapper matches the intended image size */}
-            <img
-              src={BlankNote}
-              alt="Event Detail"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-between p-4">
-              {/* Overlay content, using padding for positioning instead of margin */}
-              <h2 className="text-xl md:text-2xl lg:text-3xl text-white font-bold text-center">
-                {notes.find((note) => note.id === activeNote)?.eventName}
-              </h2>
+            {/* Note content */}
+            <div
+              className="transform -rotate-2" // Slightly rotate the note
+              style={{ maxWidth: "35vw", maxHeight: "75vh" }} // Adjust size for responsiveness and to avoid excessive vertical extension
+            >
+              <img
+                src={BlankNote}
+                alt="Note"
+                className="object-contain w-full h-full" // Ensure the image scales within its bounds
+              />
+            </div>
 
-              {/* Responsive container for banner and buttons */}
-              <div className="flex-1 flex flex-col items-center justify-center space-y-4">
-                {/* Banner */}
-                <div className="w-3/4 md:w-1/2 bg-red-500">
-                  <img
-                    src={notes.find((note) => note.id === activeNote)?.banner}
-                    alt="Event Banner"
-                    className="w-full h-auto"
-                  />
-                </div>
-
-                {/* Buttons */}
-                <div className="flex flex-col w-3/4 md:w-1/2 items-center space-y-2">
-                  <button className="w-full py-2 bg-blue-500 text-white rounded-full">
-                    Daugiau / Read More
-                  </button>
-                  <button className="w-full py-2 bg-blue-500 text-white rounded-full">
-                    Registracija / Register
-                  </button>
-                </div>
-              </div>
-
-              {/* Scrollable text description */}
-              <div
-                className="text-white text-center overflow-auto p-2"
-                style={{ maxHeight: "20%" }}
-              >
-                <p>{notes.find((note) => note.id === activeNote)?.text}</p>
-              </div>
+            {/* Clipboard content */}
+            <div
+              className="transform rotate-2" // Slightly rotate the clipboard
+              style={{ maxWidth: "35vw", maxHeight: "75vh" }} // Match the note's size for consistency
+            >
+              <img
+                src={TeamClipboard}
+                alt="Clipboard"
+                className="object-contain w-full h-full" // Adjust scaling within its bounds
+              />
             </div>
           </div>
         </div>
