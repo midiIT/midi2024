@@ -323,7 +323,7 @@ export default function EventSection() {
               <img
                 src={TeamClipboard}
                 alt="Clipboard"
-                className="object-cover w-full h-full"
+                className="w-full h-full"
               />
               {/* Text overlay for the clipboard */}
               <div
