@@ -343,7 +343,7 @@ export default function EventSection() {
               </div>
             </div>
             <div
-              className="relative transform rotate-2 w-[35vw] h-full" // Keeping the clipboard slightly smaller
+              className="flex flex-shrink-0 transform rotate-2 w-[35vw] h-full" // Keeping the clipboard slightly smaller
             >
               <img
                 src={TeamClipboard}
