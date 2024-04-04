@@ -10,7 +10,7 @@ import SachmataiNote from "../images/noteSachmatai.svg";
 import SportodienosNote from "../images/noteSportodienos.svg";
 import UzdarymasNote from "../images/noteUzdarymas.svg";
 import LANBanner from "../images/lanparty.webp";
-import TeamClipboard from "../images/clipboard-02.png";
+import TeamClipboard from "../images/teamClipboard.png";
 
 export default function EventSection() {
   const [activeNote, setActiveNote] = useState(null);
