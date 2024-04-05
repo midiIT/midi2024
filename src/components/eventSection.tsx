@@ -432,12 +432,31 @@ export default function EventSection() {
                   alt="Event Banner"
                   className="object-cover h-[45%]" // Adjust the size to maintain proportionality
                 />
-                <button className="py-1 px-3 text-xs bg-blue-500 text-white rounded-full">
-                  Daugiau / Read More
-                </button>
-                <button className="py-1 px-3 text-xs bg-blue-500 text-white rounded-full">
-                  Registracija / Register
-                </button>
+                {notes.find((note) => note.id === activeNote)?.more && (
+                  <a
+                    href={notes.find((note) => note.id === activeNote)?.more}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="py-1 px-3 text-xs bg-blue-500 text-white rounded-full">
+                      Daugiau / Read More
+                    </button>
+                  </a>
+                )}
+
+                {notes.find((note) => note.id === activeNote)?.registration && (
+                  <a
+                    href={
+                      notes.find((note) => note.id === activeNote)?.registration
+                    }
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="py-1 px-3 text-xs bg-blue-500 text-white rounded-full">
+                      Registracija / Register
+                    </button>
+                  </a>
+                )}
               </div>
             </div>
             <div
