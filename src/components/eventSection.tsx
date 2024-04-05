@@ -1,13 +1,13 @@
 import { useState, useEffect, useRef, SetStateAction } from "react";
-import BlankNote from "../images/noteBlank.png";
-import LANNote from "../images/noteLan.png";
-import DecathlonNote from "../images/noteDecathlon.png";
-import ImoniuMugeNote from "../images/noteImoniuMuge.png";
-import OrientacinesNote from "../images/noteOrientacines.png";
-import ProtmusisNote from "../images/noteProtmusis.png";
-import SachmataiNote from "../images/noteSachmatai.png";
-import SportodienosNote from "../images/noteSportodienos.png";
-import UzdarymasNote from "../images/noteUzdarymas.png";
+import BlankNote from "../images/noteBlank.webp";
+import LANNote from "../images/noteLan.webp";
+import DecathlonNote from "../images/noteDecathlon.webp";
+import ImoniuMugeNote from "../images/noteImoniuMuge.webp";
+import OrientacinesNote from "../images/noteOrientacines.webp";
+import ProtmusisNote from "../images/noteProtmusis.webp";
+import SachmataiNote from "../images/noteSachmatai.webp";
+import SportodienosNote from "../images/noteSportodienos.webp";
+import UzdarymasNote from "../images/noteUzdarymas.webp";
 import LANBanner from "../images/lanparty.webp";
 import ClosingBanner from "../images/uzdarymas.webp";
 import ChessBanner from "../images/sachmatai.webp";
@@ -16,7 +16,7 @@ import DecathlonBanner from "../images/decathlon.webp";
 import ProtmusisBanner from "../images/protmusis.webp";
 import SportodienosBanner from "../images/sporto_dienos.webp";
 import OrientacinesBanner from "../images/orientacines.webp";
-import TeamClipboard from "../images/teamClipboard.png";
+import TeamClipboard from "../images/teamClipboard.webp";
 
 export default function EventSection() {
   const [activeNote, setActiveNote] = useState(null);
