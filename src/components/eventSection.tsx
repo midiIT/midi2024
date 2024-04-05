@@ -10,6 +10,13 @@ import SachmataiNote from "../images/noteSachmatai.svg";
 import SportodienosNote from "../images/noteSportodienos.svg";
 import UzdarymasNote from "../images/noteUzdarymas.svg";
 import LANBanner from "../images/lanparty.webp";
+import ClosingBanner from "../images/uzdarymas.webp";
+import ChessBanner from "../images/sachmatai.webp";
+import ImoniuBanner from "../images/imoniu_muge.webp";
+import DecathlonBanner from "../images/decathlon.webp";
+import ProtmusisBanner from "../images/protmusis.webp";
+import SportodienosBanner from "../images/sporto_dienos.webp";
+import OrientacinesBanner from "../images/orientacines.webp";
 import TeamClipboard from "../images/teamClipboard.png";
 
 export default function EventSection() {
@@ -80,6 +87,7 @@ export default function EventSection() {
       <br>
       ‼️ IMPORTANT ‼️<br>
       LAN party computer game tournaments require your own equipment – a computer and all necessary peripheral equipment – monitors, computer mice, keyboards, and such, so when planning to participate in any of the tournaments, do not forget to take the necessary equipment! At least 60% of the team players participating in the tournaments must participate live in the event itself.<br>`,
+      more: "https://www.facebook.com/events/794569605864859",
       rotate: "rotate(-10deg)",
       clickable: true,
     },
@@ -87,10 +95,19 @@ export default function EventSection() {
       id: "Decathlon_note",
       top: "50%",
       left: "5%",
-      eventName: "Event numero dos",
+      eventName: "MIDI Minecraft Decathlon",
       image: DecathlonNote,
-      banner: placeholderBanner,
-      text: "Testuojamas tekstas note'e",
+      banner: DecathlonBanner,
+      text: `👾 Savaitės pradžia, laikas kibti į mokslus, tačiau nori bėgti per laukus, statyti su draugais purvo namus, kasti geležį ir smėlį, žaisti su savo augintiniu vilku? Pala... Galbūt netyčiomis praleidai visą savo laisvą laiką žaisdamas Minecraft? Tuomet turime tau gerų žinių – Minecraft Decathlon jau čia! <br> <br>
+      ✨ Surink savo komandą, išbandyk savo sugebėjimus, varžykis su kitais dalyviais PvP ir parkour rungtyse bei laimėk įvairių prizų! <br> <br>
+
+      🇬🇧
+      <br>
+      <br>
+      👾 It’s the beginning of the week, time to start studying, but all you want to do is run across the fields, build dirt houses with your friends, dig iron and sand, play with your pet wolf? Hold on... Perhaps you accidentally spent all your free time playing Minecraft? Then we have good news for you - Minecraft Decathlon is here! <br>
+      <br>
+      ✨ Gather your team, test your skills, compete with other participants in PvP and parkour matches, and win prizes!`,
+      more: "https://www.facebook.com/events/1501970454037049",
       rotate: "rotate(10deg)",
       clickable: true,
     },
@@ -98,10 +115,23 @@ export default function EventSection() {
       id: "Imoniu_note",
       top: "40%",
       left: "30%",
-      eventName: "Event numero tres",
+      eventName: "MIDI Įmonių mugė | Career fair",
       image: ImoniuMugeNote,
-      banner: placeholderBanner,
-      text: "Testuojamas tekstas note'e",
+      banner: ImoniuBanner,
+      text: `🧐 Jau atsidarai n-tąjį darbo skelbimų portalą ir vis dar nerandi tinkamos pozicijos, o gal beskaitydamas reikalavimus nesupranti, ko iš tavęs prašo bei kokios bus tavo būsimos pareigos? Daugiau to daryti nebereikės, nes jau balandžio 22 d. MIDI kviečia į kasmetinę įmonių mugę, kur viename koridoriuje tavęs ir tavo draugų lauks daugiau nei iš 10 įmonių atvykę atstovai, o galbūt tavo būsimi kolegos? Čia galėsi užduoti sau rūpimus klausimus, aplikuoti į skirtingas pozicijas, dalyvauti darbo pokalbiuose ir atrasti savo karjeros kelią! <br>
+      <br>
+      ✨ MIDI 2024 Įmonių mugė yra skirta kiekvienam – nuo karjeros pradžios ieškančio matematiko, iki paskutinių kursų Programų sistemų studento. O jei nori išbandyti savo jėgas darbo pokalbiuose tai galėsi padaryti įmonių siūlomuose greituosiuose darbo pokalbiuose. <br>
+      <br>
+      Taigi, nesėdėk namuose ir ateik į VU MIF Naugarduko fakultetą susipažinti su savo būsimomis ateities galimybėmis! <br>
+      <br>
+      🇬🇧 <br>
+      <br>
+      🧐 Already opening your nth job application portal and still can’t find a suitable position, or maybe when reading the requirements you don’t understand what is being asked of you and what your future job position will be like? You won’t have to do that anymore, because on April 22nd MIDI invites you to the annual career fair, where representatives from more than 10 companies will be waiting for you and your friends. Maybe you’ll even meet your future colleagues! Here you can ask questions, apply for different positions, participate in job interviews, and discover your career path! <br>
+      <br>
+      ✨ MIDI 2021 Career fair is open for everyone, from a mathematician with a startup career, to a final year Program Systems student. And if you want to practice your speech for a job interview you can do so in quick job interviews offered by the companies. <br>
+      <br>
+      So don’t sit at home and come to VU MIF Naugardukas faculty to find out more about your potential for the future!`,
+      more: "https://www.facebook.com/events/1544949116238549",
       rotate: "rotate(20deg)",
       clickable: true,
     },
@@ -109,10 +139,27 @@ export default function EventSection() {
       id: "Orientacines_note",
       top: "10%",
       left: "80%",
-      eventName: "Event numero quatro",
+      eventName: "MIDI Orientacinės varžybos | Orienteering competition",
       image: OrientacinesNote,
-      banner: placeholderBanner,
-      text: "Testuojamas tekstas note'e wooo per daug teksto aaajajajasjdaksdjaskjdkajsdkasjdkasjd",
+      banner: OrientacinesBanner,
+      text: `Ar girdėjai šnabždesį, gal jau spėjai pastebėti ženklus?👀 <br>
+      <br>
+      🔎MIDI 2024 orientacinės varžybos pagaliau atkeliavo čia!🗺️ <br>
+      <br>
+      🕵🏼‍♀️Ar esi pasiruošęs pasinerti į paslaptingą Vilniaus vakarą bei kartu su savo komanda įveikti detektyvinę užduotį? Griebk savo draugus, žibintuvėlį, popieriaus lapą, užkandžius bei skaičiuotuvą ir pasileisk į šį nuotykių kupiną vakarą! Geriausios trys komandos bus apdovanotos prizais, tad nedelsk ir išbandyk savo jėgas ir įgūdžius nematomojoje Vilniaus pusėje!🕵🏻‍♂️ <br>
+      <br>
+      Daugiau informacijos jau netrukus. <br>
+      <br>
+      🇬🇧 <br>
+      <br>
+      Have you heard the whispers, maybe you already noticed the signs?👀 <br>
+      <br>
+      🔎MIDI 2024 Orienteering Competition is finally here!🗺️ <br>
+      <br>
+      🕵🏼‍♀️Are you ready to immerse yourself in the mysterious evening of Vilnius and solve a mystery with your team? Grab your friends, a flashlight, a piece of paper, some snacks, a calculator and head out for an evening full of adventures! Three best teams will be awarded with prizes, so don‘t delay and test your strength and skills in the dark side of Vilnius!🕵🏻‍♂️ <br>
+      <br>
+      More information is coming soon.`,
+      more: "https://www.facebook.com/events/335718952392132",
       rotate: "rotate(-20deg)",
       clickable: true,
     },
@@ -120,10 +167,12 @@ export default function EventSection() {
       id: "Protmusis_note",
       top: "50%",
       left: "80%",
-      eventName: "Event numero quatro",
+      eventName: "MIDI Protmūšis | Battle of the Wits",
       image: ProtmusisNote,
-      banner: placeholderBanner,
-      text: "Testuojamas tekstas note'e wooo per daug teksto aaajajajasjdaksdjaskjdkajsdkasjdkasjd",
+      banner: ProtmusisBanner,
+      text: `🧠 Jau kurį laiką nori išbandyti savo ir draugų protą bei mesti iššūkį kitiems? Jeigu taip, nieko nelaukęs čiupk draugus už parankių, suformuok šauniausią komandą, ir prisijunk prie MIDI 2024 protmūšio, kur tavęs laukia geras laikas, o geriausių komandų laukia ir nuostabūs prizai! Lauksime tavęs balandžio 25 dieną 19h Action! by Apollo!✨ <br>
+      <br>
+      Daugiau informacijos jau netrukus.`,
       rotate: "rotate(-20deg)",
       clickable: true,
     },
@@ -131,10 +180,20 @@ export default function EventSection() {
       id: "Sachmatai_note",
       top: "70%",
       left: "20%",
-      eventName: "Event numero quatro",
+      eventName: "MIDI Šachmatų turnyras | Chess Tournament",
       image: SachmataiNote,
-      banner: placeholderBanner,
-      text: "Testuojamas tekstas note'e wooo per daug teksto aaajajajasjdaksdjaskjdkajsdkasjdkasjd",
+      banner: ChessBanner,
+      text: `♟️ Ar gali nuspėti kitą varžovo ėjimą? Ar 64 langeliai tau reiškia daugiau nei tik stalo žaidimo lentą? Ar susimąstei, kad galbūt net paprastas pėstininkas slepia mįslę, kurią išnarplioti gali tu?🔎🔓 <br>
+      <br>
+      👉 MIDI Šachmatų turnyras – tai seniausia MIDI tradicija. Tavęs laukia ne tik geri prisiminimai, bet ir galimybė laimėti įvairius prizus! Nesvarbu, ar esi profesionalas, ar tik moki žaidimo taisykles, tu ir tavo draugai esate laukiami šių metų MIDI Šachmatų turnyre! <br>
+      <br>
+      🇬🇧 <br>
+      <br>
+      ♟️ Can you predict your opponent’s next move? Do 64 squares mean more than just a game board to you? Have you ever wondered how even a simple pawn might be hiding a riddle, which you could solve?🔎🔓 <br>
+      <br>
+      👉 MIDI Chess Tournament is the oldest MIDI tradition. Not only do good memories await you, but also a chance to win various prizes! Doesn’t matter if you’re a professional or just someone who knows the rules, you and your friends are welcome to this year’s MIDI Chess Tournament!`,
+      more: "https://www.facebook.com/events/398712329573489",
+      registration: "https://forms.gle/t4uN7QLcvAzT54bQ6",
       rotate: "rotate(-20deg)",
       clickable: true,
     },
@@ -142,10 +201,27 @@ export default function EventSection() {
       id: "Sportodienos_note",
       top: "75%",
       left: "60%",
-      eventName: "Event numero quatro",
+      eventName: "MIDI Asseco Sporto Dienos | Asseco Sports Days",
       image: SportodienosNote,
-      banner: placeholderBanner,
-      text: "Testuojamas tekstas note'e wooo per daug teksto aaajajajasjdaksdjaskjdkajsdkasjdkasjd",
+      banner: SportodienosBanner,
+      text: `🏆 MIDI 2024 Asseco Sporto Dienos jau čia ir kviečia jus į įdomų ir įkvepiantį renginį, skirtą bendram sportiniam susivienijimui bei aktyviam gyvenimo būdui! Šios dienos bus pilnos energijos, draugystės ir sportinio entuziazmo, leidžiančių mums kartu patirti aistrą sportui. Dalyviai turės ne tik puikią progą pasitikrinti savo jėgas prieš kitus universiteto studentus, bet ir laimėti puikių prizų. <br>
+      <br>
+      🏀 Praėjus žiemai ir artėjant vasarai vėl artėja jau tradicija tapę MIDI turnyrai! Kviesk savo draugus, šeimos narius ar kolegas susiburti į komandas, užsiregistruoti ir išbandyti savo jėgas 2024 metų MIDI 3x3 TINKLINIO, 3x3 KREPŠINIO bei 6x6 FUTBOLO turnyruose! Tai puiki galimybė išjudinti sustingusius raumenis ir praleisti laiką su artimaisiais bei draugais! <br>
+      <br>
+      🤼 Atsibodo įprasti sporto žaidimai? Ar jauti, kad nori patirti kažką naujo ir netradicinio? Jei taip, tai MIDI 2024 NETRADICINIO sporto turnyras kaip tik tau! Šis turnyras susideda iš kelių netradicinių sporto veiklų: futbolo su pripučiamais kostiumais, sumo imtynių bei kliūčių ruožo. Šio turnyro metu išbandysi savo taiklumą, vikrumą bei greitį. Tad suburk 4 asmenų komandą, registruokis ir laimėk! <br>
+      <br>
+      Daugiau informacijos jau netrukus. <br>
+      <br>
+      🇬🇧 <br>
+      <br>
+      🏆 MIDI 2024 Asseco Sports Days are finally here and are inviting you to an interesting and inspiring event dedicated to the general love of sports and active lifestyle! This event will be full of energy, friendship and enthusiasm for sports, allowing us to experience our passion for sports together. Not only will participants have an opportunity to test their strength against other university students, but also to win great prizes. <br>
+      <br>
+      🏀 With winter over and summer finally approaching, MIDI tournaments, which have become a tradition, are coming again! Invite your friends, family, or colleagues to team up, register and try your best at the year 2024 3x3 MIDI VOLLEYBALL, 3x3 BASKETBALL and 6x6 FOOTBALL tournaments! It will be a great opportunity to shake out stiff muscles and spend time with your closest friends and family! <br>
+      <br>
+      🤼 Tired of conventional sports games? Do you feel the need to experience something new? If so, the MIDI 2024 NON-TRADITIONAL Sports tournament is just right for you! This tournament will provide you an opportunity to try out several non-traditional sports activities: soccer with inflatable suits, sumo wrestling, and an obstacle course. During this tournament, you’ll be able to test your accuracy, dexterity, and speed. Gather a team of 4 people, register and win! <br>
+      <br>
+      More information is coming soon.`,
+      more: "https://www.facebook.com/events/1103163390806440",
       rotate: "rotate(-20deg)",
       clickable: true,
     },
@@ -153,10 +229,32 @@ export default function EventSection() {
       id: "Uzdarymas_note",
       top: "40%",
       left: "50%",
-      eventName: "Event numero quatro",
+      eventName: "MIDI Uždarymo vakaras | Closing Event",
       image: UzdarymasNote,
-      banner: placeholderBanner,
-      text: "Testuojamas tekstas note'e wooo per daug teksto aaajajajasjdaksdjaskjdkajsdkasjdkasjd",
+      banner: ClosingBanner,
+      text: `🎭Uždarymo vakaras - tai paskutinis MIDI renginys, kviečiantis visus kartu užbaigti daugybę įspūdžių studentams bei jų draugams palikusią savaitę! <br>
+      <br>
+      Tai puiki proga ne tik atsitraukti nuo akademinių iššūkių ir darbų, bet ir pasinerti į nepamirštamą šventės sūkurį! 🎶Energinga muzika, profesionalūs DJ ir erdvi šokių aikštelė kvies visus atsipalaiduoti ir išlaisvinti savo vidinį šokėją.💃🏻🕺🏼 <br>
+      <br>
+      🎤Pasiruoškite ne tik pašokti iki paryčių, bet ir pasimėgauti nepamirštama humoro doze – MIDI finalo vakarą laukia ir staigmenų kupinas stand-up pasirodymas! <br>
+      <br>
+      Renginio tema - Kaukių Balius!🎭 Neturi kaukės? Nesijaudink, mes parūpinsim!
+      🎉Laukia įsimintinas vakaras, kurio negali praleisti, tad skubėk savo ir draugų kalendoriuose pasižymėti📝 balandžio 27 d., ir susitinkam muzikiniame teatre ,,Legendos Klubas”! (durys atidaromos 19:00) <br>
+      <br>
+      Bilietai ir daugiau informacijos jau netrukus. <br>
+      <br>
+      🇬🇧 <br>
+      <br>
+      MIDI week – a vibrant kaleidoscope of adventures, excitement, and unforgettable moments. What better way to crown this celebration than with a grand closing party?🎭
+      This is a perfect opportunity to not only step away from academic challenges and work but also to immerse yourself in an unforgettable whirlpool of celebration! 🎶Energetic music, professional DJs, and a spacious dance floor will invite everyone to relax and unleash their inner dancer.💃🏻🕺🏼 <br>
+      <br>
+      🎤Get ready to not only dance until dawn, but also enjoy an unforgettable dose of humor – the MIDI finale will also feature a surprise-filled stand-up performance! <br>
+      <br>
+      The theme of the ball is Masquerade!🎭 Don't have a mask? Don't worry, you'll have an opportunity to get one at the event! <br>
+      <br>
+      🎉So hurry up and mark📝 April 27th in your and your friends' calendars and let's meet in the "Legendos Klubas", because an unforgettable evening awaits you! (Doors open at 19:00)
+      Tickets and more information are coming soon.`,
+      more: "https://www.facebook.com/events/1498800404387583",
       rotate: "rotate(-20deg)",
       clickable: true,
     },
@@ -249,7 +347,7 @@ export default function EventSection() {
     // Attach the event listener for the resize event
     window.addEventListener("resize", handleLoadAndResize);
 
-    setTimeout(updatePaths, 100);
+    setTimeout(updatePaths, 1000);
 
     return () => {
       window.removeEventListener("load", handleLoadAndResize);
