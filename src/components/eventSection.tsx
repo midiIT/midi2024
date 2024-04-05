@@ -173,6 +173,7 @@ export default function EventSection() {
       text: `🧠 Jau kurį laiką nori išbandyti savo ir draugų protą bei mesti iššūkį kitiems? Jeigu taip, nieko nelaukęs čiupk draugus už parankių, suformuok šauniausią komandą, ir prisijunk prie MIDI 2024 protmūšio, kur tavęs laukia geras laikas, o geriausių komandų laukia ir nuostabūs prizai! Lauksime tavęs balandžio 25 dieną 19h Action! by Apollo!✨ <br>
       <br>
       Daugiau informacijos jau netrukus.`,
+      more: "https://www.facebook.com/events/1083365632962314",
       rotate: "rotate(-20deg)",
       clickable: true,
     },
