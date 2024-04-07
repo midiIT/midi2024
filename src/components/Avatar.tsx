@@ -15,7 +15,7 @@ export default function Avatar(props: {
       {/* polaroid card */}
       <div className="w-60 h-60 bg-white rounded flex flex-col items-center p-2">
         <img
-          className=""
+          className="h-full"
           src={props.imgsrc}
           alt={props.name}
           loading={props.priority ? "eager" : "lazy"}

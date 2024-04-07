@@ -1,0 +1,43 @@
+interface TeamMember {
+  picture: string;
+  name: string;
+  position: string;
+  phone: string;
+  email: string;
+}
+
+const TeamMembers: TeamMember[] = [
+  { picture: "Augustina", name: "Augustina Petraitytė", position: "MIDI vadovai", phone: "+370 61 399 808", email: "vadovas@midi.lt" },
+  { picture: "Darius", name: "Darius Skergelza", position: "Žmogiškųjų išteklių vadovas", phone: "+370 60 503 379", email: "hr@midi.lt" },
+  { picture: "Gytis", name: "Gytis Mockevičius", position: "Minecraft decathlon'o vadovas", phone: "+370 62 423 266", email: "minecraft@midi.lt" },
+  { picture: "Domas", name: "Domas Bruišys", position: "LAN Party vadovas", phone: "+370 60 313 085", email: "lan@midi.lt" },
+  { picture: "Rokas", name: "Rokas Baltrušaitis", position: "Marketingo vadovas", phone: "+370 67 543 514", email: "marketingas@midi.lt" },
+  { picture: "Augustas", name: "Augustas Švetkauskas", position: "Organizacinės srities vadovas", phone: "+370 62 213 302", email: "org@midi.lt" },
+  { picture: "Olen", name: "Olen Račkauskas", position: "Informacinių technologijų vadovas", phone: "+370 64 622 318", email: "it@midi.lt" },
+  { picture: "Titas", name: "Titas Masys", position: "Roko operos vadovas", phone: "+370 69 535 871", email: "ro.vadovas@midi.lt" },
+  { picture: "Vaiva", name: "Vaiva Janavičiūtė", position: "Organizacinės srities vadovė", phone: "+370 65 653 406", email: "org@midi.lt" },
+  { picture: "MantasG", name: "Mantas Globys", position: "Organizacinės srities vadovas", phone: "+370 69 368 981", email: "org@midi.lt" },
+  { picture: "Nojus", name: "Nojus Jokūbaitis", position: "Kūrybinės grupės vadovas", phone: "+370 61 788 075", email: "kurybine@midi.lt" },
+  { picture: "Meja", name: "Mėja Plytnikaitė", position: "Administratorė", phone: "+370 67 978 534", email: "admin@midi.lt" },
+  { picture: "Ruta", name: "Rūta Skergelzaitė", position: "Komunikacijos vadovė", phone: "+370 63 818 273", email: "org@midi.lt" },
+  { picture: "Saule", name: "Saule Gylyte", position: "Barterinių remėjų vadovė", phone: "+370 60 940 829", email: "reklama@midi.lt" },
+  { picture: "Laura", name: "Laura Ukrinaitė", position: "Sportinio pokerio vadovė", phone: "+370 64 501 020", email: "pokeris@midi.lt" },
+  { picture: "Aiste", name: "Aistė Jurjonaitė", position: "Protmūšio vadovė", phone: "+370 64 072 522", email: "protmusis@midi.lt" },
+  { picture: "Kasparas", name: "Kasparas Šumskis", position: "Sporto dienų vadovas", phone: "+370 68 923 669", email: "sportas@midi.lt" },
+  { picture: "Gintare", name: "Gintarė Antulytė", position: "Sporto dienų vadovė", phone: "+370 66 223 500", email: "sportodiena@midi.lt" },
+  { picture: "Ainius", name: "Ainius Gecas", position: "Šachmatų turnyro vadovas", phone: "+370 61 838 654", email: "sachmatai@midi.lt" },
+  { picture: "Ugne", name: "Ugnė Vaičiūnaitė", position: "Uždarymo vakaro vadovė", phone: "+370 68 917 616", email: "uzdarymas@midi.lt" },
+  { picture: "Martynas", name: "Martynas Mažuolis", position: "Video vadovas", phone: "+370 64 479 996", email: "video@midi.lt" },
+  { picture: "ViktorijaR", name: "Viktorija Ramonaitė", position: "Dizaino srities vadovė", phone: "+370 62 081 727", email: "dizainas@midi.lt" },
+  { picture: "ViktorijaZ", name: "Viktorija Žemaitytė", position: "Press vadovė", phone: "+370 68 307 008", email: "press@midi.lt" },
+  { picture: "Simonas", name: "Simonas Sušickis", position: "Stream vadovas", phone: "+370 61 679 110", email: "stream@midi.lt" },
+  { picture: "Mindaugas", name: "Mindaugas Tolušis", position: "Discord vadovas", phone: "+370 62 500 503", email: "discord@midi.lt" },
+  { picture: "MantasK", name: "Mantas Kandrotas", position: "Offline veiklų vadovas", phone: "+370 61 206 610", email: "offline@midi.lt" },
+  { picture: "Ricardas", name: "Ričardas Čubukinas", position: "LAN mentorius", phone: "", email: "" },
+  { picture: "Gustas", name: "Gustas Štaševskis", position: "IT mentorius", phone: "", email: "" },
+  { picture: "Nikita", name: "Nikita Gladčenko", position: "Organizatorių mentorius", phone: "", email: "" },
+  { picture: "GintareA", name: "Gintarė Aliukonytė", position: "Komunikacijos mentorė", phone: "", email: "" },
+  { picture: "Paulina", name: "Paulina Bilinskaitė", position: "HR ir vadovų mentorė", phone: "", email: "" },
+  { picture: "Monika", name: "Monika Barauskaitė", position: "HR ir komunikacijos mentorė", phone: "", email: "" }
+];
+
