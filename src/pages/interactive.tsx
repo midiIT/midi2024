@@ -9,10 +9,6 @@ import TeamIcon from "../images/team_clipboard.png";
 function Interactive() {
   const navigate = useNavigate();
 
-  const goBack = () => {
-    navigate(-1);
-  };
-
   return (
     <>
       {/* Corkboard Section */}
@@ -35,7 +31,6 @@ function Interactive() {
         </div>
 
         <EventSection/>
-
         {/* Team Icon in Bottom Right Corner */}
           <div className="flex flex-col absolute bottom-4 right-4 items-center">
             <TeamSection />

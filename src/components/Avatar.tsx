@@ -9,26 +9,31 @@ export default function Avatar(props: {
   placeholder?: any;
 }) {
   return (
-    <div
-      className={
-        props.className + " flex flex-col items-center gap-2 text-center"
-      }
-    >
-      <img
-        className="min-w-48 min-h-48 h-48 w-48 rounded-full object-cover"
-        src={props.imgsrc}
-        alt={props.name}
-        loading={props.priority ? "eager" : "lazy"}
-      />
-      <p className="text-4xl">{props.name}</p>
-      <p className="w-3/4 text-2xl ">{props.title}</p>
+    <div className={
+      props.className + " flex flex-col items-center gap-2 text-center"
+    }>
+      {/* polaroid card */}
+      <div className="w-60 h-48 bg-white rounded flex flex-col items-center p-2">
+        {/* Set a container for the image to control its size explicitly */}
+        <div className="w-44 h-36 overflow-hidden"> {/* Adjust width and height as needed */}
+          <img
+            className="w-full h-full object-cover" // object-cover will maintain the aspect ratio
+            src={props.imgsrc}
+            alt={props.name}
+            loading={props.priority ? "eager" : "lazy"}
+          />
+        </div>
+        <p className="text-2xl">{props.name}</p>
+      </div>
+      {/* contacts */}
+      <p className="w-3/4 text-xl">{props.title}</p>
       <a
         href={"mailto:" + props.email}
-        className="w-3/4 text-2xl text-midiblue"
+        className="w-3/4 text-xl text-midiblue inline-flex items-center justify-center"
       >
         {props.email}
       </a>
-      <a href={"tel:" + props.phone} className="text-2xl text-midiblue">
+      <a href={"tel:" + props.phone} className="text-xl text-midiblue">
         {props.phone}
       </a>
     </div>
