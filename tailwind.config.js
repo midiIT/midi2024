@@ -7,7 +7,8 @@ export default {
         sans: ["Dosis", "sans-serif"],
       },
       colors: {
-        'midiblue': '#00466C'
+        'midiblue_dark': '#00466C',
+        'midiblue_bright': '#0075B5'
       }
     }
   },

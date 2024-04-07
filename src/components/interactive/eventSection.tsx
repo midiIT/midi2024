@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, SetStateAction } from "react";
+import { useState, useEffect, useRef } from "react";
 import BlankNote from "../../images/interactive/noteBlank.webp";
 import LANNote from "../../images/interactive/noteLan.webp";
 import DecathlonNote from "../../images/interactive/noteDecathlon.webp";
@@ -20,18 +20,17 @@ import TeamClipboard from "../../images/interactive/teamClipboard.webp";
 
 export default function EventSection() {
   const [activeNote, setActiveNote] = useState(null);
-  const [showEvent, setShowEvent] = useState(false);
-  const modalContentRef = useRef();
+  const modalContentRef = useRef<any>();
   // Using an array of refs to handle multiple notes dynamically
-  const notesRefs = useRef([]);
+  const notesRefs = useRef<any>([]);
   notesRefs.current = [];
-  const addToRefs = (el) => {
+  const addToRefs = (el: never) => {
     if (el && !notesRefs.current.includes(el)) {
       notesRefs.current.push(el);
     }
   };
 
-  const handleClickOutside = (event) => {
+  const handleClickOutside = (event: { target: any; }) => {
     if (
       modalContentRef.current &&
       !modalContentRef.current.contains(event.target)
@@ -41,7 +40,7 @@ export default function EventSection() {
   };
 
   // Define your notes and their positions here
-  const [notes, setNotes] = useState([
+  const [notes] = useState([
     {
       id: "LAN_note",
       top: "5%",
@@ -268,7 +267,7 @@ export default function EventSection() {
   ]);
 
   // Define connections between notes by their IDs
-  const [connections, setConnections] = useState([
+  const [connections] = useState([
     { startId: "LAN_note", endId: "Decathlon_note" },
     { startId: "Decathlon_note", endId: "Imoniu_note" },
     { startId: "Imoniu_note", endId: "Orientacines_note" },
@@ -282,9 +281,9 @@ export default function EventSection() {
 
   const [paths, setPaths] = useState([]);
 
-  const toggleEvent = () => setShowEvent(!showEvent);
+  // const toggleEvent = () => setShowEvent(!showEvent);
 
-  const toggleNote = (noteId) => {
+  const toggleNote = (noteId: any) => {
     const note = notes.find((note) => note.id === noteId);
     if (note && note.clickable) {
       // Check if note is clickable
@@ -292,7 +291,7 @@ export default function EventSection() {
     }
   };
 
-  const calculatePath = (startNote, endNote) => {
+  const calculatePath = (startNote: any, endNote: any) => {
     const startX = startNote.left + startNote.width / 2 + window.scrollX;
     const startY = startNote.top + startNote.height / 2 + window.scrollY;
     const endX = endNote.left + endNote.width / 2 + window.scrollX;
@@ -325,6 +324,8 @@ export default function EventSection() {
         return null;
       })
       .filter((path) => path);
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-expect-error
     setPaths(newPaths);
   };
 

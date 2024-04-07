@@ -3,7 +3,7 @@ import { useState, useEffect, useCallback } from "react";
 import TeamSectionIcon from "../public/icons/TeamSection.webp";
 import EventSectionIcon from "../public/icons/EventSection.webp";
 import SponsorSectionIcon from "../public/icons/SponsorSection.webp";
-import ArticleSectionIcon from "../public/icons/ArticleSection.webp";
+//import ArticleSectionIcon from "../public/icons/ArticleSection.webp";
 import Navigationbuttons from "../components/NavigationButtons";
 import MIDILogotipas from "../public/MIDIlogo.webp"
 

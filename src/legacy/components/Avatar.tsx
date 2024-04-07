@@ -24,11 +24,11 @@ export default function Avatar(props: {
       <p className="w-3/4 text-2xl ">{props.title}</p>
       <a
         href={"mailto:" + props.email}
-        className="w-3/4 text-2xl text-midiblue"
+        className="w-3/4 text-2xl text-midiblue_bright"
       >
         {props.email}
       </a>
-      <a href={"tel:" + props.phone} className="w-3/4 text-2xl text-midiblue">
+      <a href={"tel:" + props.phone} className="w-3/4 text-2xl text-midiblue_bright">
         {props.phone}
       </a>
     </div>

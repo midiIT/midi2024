@@ -353,6 +353,8 @@ const TeamSection: React.FC = () => {
 
     setCurrentPage(currentPage - 1);
   };
+  // @ts-ignore
+  // @ts-ignore
   return (
     <div>
       {/* Icon */}
@@ -404,7 +406,6 @@ const TeamSection: React.FC = () => {
                             imgsrc={member.picture}
                             phone={member.phone}
                             email={member.email}
-                            placeholder={"blur"}
                         />
                       </div>
                   ))}

@@ -272,13 +272,13 @@ export default function EventsSection() {
                 </div>
                 <div className="basis-1/2 whitespace-nowrap lg:basis-1/3 2xl:basis-1/5">
                   <a target="_blank" href={event.more} className="">
-                    <div className="m-4 rounded-full border-4 border-midiblue px-4 pt-2 pb-4 text-center text-xl font-semibold text-midiblue transition-all hover:border-white hover:text-white md:text-4xl">
+                    <div className="m-4 rounded-full border-4 border-midiblue_bright px-4 pt-2 pb-4 text-center text-xl font-semibold text-midiblue_bright transition-all hover:border-white hover:text-white md:text-4xl">
                       Daugiau / Read More
                     </div>
                   </a>
                   {event.registration ? (
                     <a target="_blank" href={event.registration}>
-                      <div className="m-4 rounded-full border-4 border-midiblue px-4 pt-2 pb-4 text-center text-xl font-semibold text-midiblue transition-all hover:border-white hover:text-white md:text-4xl">
+                      <div className="m-4 rounded-full border-4 border-midiblue_bright px-4 pt-2 pb-4 text-center text-xl font-semibold text-midiblue_bright transition-all hover:border-white hover:text-white md:text-4xl">
                         Registracija / Register
                       </div>
                     </a>

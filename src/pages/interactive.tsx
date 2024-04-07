@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router-dom";
 import TeamSection from "../components/interactive/teamSection.tsx";
 import EventSection from "../components/interactive/eventSection.tsx";
 import Sponsors from "../components/interactive/sponsors/Sponsors.tsx";
@@ -6,7 +5,6 @@ import MIDILogo from "../images/interactive/MIDI-Logotipas.png";
 
 
 function Interactive() {
-  const navigate = useNavigate();
 
   return (
     <>
