@@ -1,25 +1,25 @@
 import Sponsor from "./Sponsor.tsx"
 import './styles.css'
 
-import Asseco from "../../images/logos/asseco.png";
-import Accenture from "../../images/logos/accenture.png";
-import TwoDay from "../../images/logos/twoday.svg";
-import Coherent from "../../images/logos/coherent.png";
-import Kpmg from "../../images/logos/kpmg.png";
-import WU from "../../images/logos/westernunionWhite.png";
-import Teltonika from "../../images/logos/teltonika.svg";
-import Bentley from "../../images/logos/bentley.png";
-import NordCurrent from "../../images/logos/nordcurrent.png";
-import Luminor from "../../images/logos/luminor.svg";
-import Shift4 from "../../images/logos/shift4.svg";
-import PWC from "../../images/logos/pwc.png";
-import Wix from "../../images/logos/wix.svg";
-import VTeX from "../../images/logos/vtex.png";
-import Neara from "../../images/logos/neara.png";
-import Skruzdis from "../../images/logos/skruzdis.png";
-import Badmintonas from "../../images/logos/badmintonoC.svg";
-import Pepsi from "../../images/logos/pepsi.png";
-import Smutis from "../../images/logos/aaaaaaaaaaaaa.png";
+import Asseco from "../../../images/logos/asseco.png";
+import Accenture from "../../../images/logos/accenture.png";
+import TwoDay from "../../../images/logos/twoday.svg";
+import Coherent from "../../../images/logos/coherent.png";
+import Kpmg from "../../../images/logos/kpmg.png";
+import WU from "../../../images/logos/westernunionWhite.png";
+import Teltonika from "../../../images/logos/teltonika.svg";
+import Bentley from "../../../images/logos/bentley.png";
+import NordCurrent from "../../../images/logos/nordcurrent.png";
+import Luminor from "../../../images/logos/luminor.svg";
+import Shift4 from "../../../images/logos/shift4.svg";
+import PWC from "../../../images/logos/pwc.png";
+import Wix from "../../../images/logos/wix.svg";
+import VTeX from "../../../images/logos/vtex.png";
+import Neara from "../../../images/logos/neara.png";
+import Skruzdis from "../../../images/logos/skruzdis.png";
+import Badmintonas from "../../../images/logos/badmintonoC.svg";
+import Pepsi from "../../../images/logos/pepsi.png";
+import Smutis from "../../../images/logos/aaaaaaaaaaaaa.png";
 
 
 const goldenSponsors = [

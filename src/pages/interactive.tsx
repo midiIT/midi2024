@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
-import TeamSection from "../components/TeamSection";
-import EventSection from "../components/eventSection";
-import Sponsors from "../components/sponsors/Sponsors.tsx";
+import TeamSection from "../components/interactive/TeamSection.tsx";
+import EventSection from "../components/interactive/eventSection.tsx";
+import Sponsors from "../components/interactive/sponsors/Sponsors.tsx";
 import MIDILogo from "../images/MIDI-Logotipas.png";
 import TeamIcon from "../images/team_clipboard.png";
 
