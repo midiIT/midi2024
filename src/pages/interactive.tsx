@@ -6,10 +6,6 @@ import TeamIcon from "../images/team_clipboard.png";
 function Interactive() {
   const navigate = useNavigate();
 
-  const goBack = () => {
-    navigate(-1);
-  };
-
   return (
     <>
       {/* Corkboard Section */}

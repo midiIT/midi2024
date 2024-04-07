@@ -44,9 +44,17 @@ interface TeamMember {
   email: string;
 }
 
+enum MembersCategories {
+  VADOVAI,
+  RENGINIU_VADOVAI,
+  KOMUNIKACIJA,
+  LAN_PARTY_VADOVAI,
+  MENTORIAI
+}
+
 const TeamSection: React.FC = () => {
   const [showClipboard, setShowClipboard] = useState(false);
-  const [currentPage, setCurrentPage] = useState(0);
+  const [currentPage, setCurrentPage] = useState(MembersCategories.VADOVAI);
 
   const [pageTeamMembers, setPageTeamMembers] = useState([] as TeamMember[]);
 
@@ -295,22 +303,54 @@ const TeamSection: React.FC = () => {
   };
 
   useEffect(() => {
-    setPageTeamMembers([...teamMembers].splice(0, 6));
+    setPageTeamMembers([...teamMembers.vadovai]);
   }, []);
 
-  const amountOfPages = teamMembers.length / 6;
-
   const nextPage = () => {
-    if (currentPage + 1 >= amountOfPages) return;
+    if (currentPage + 1 >= MembersCategories.MENTORIAI + 1) return;
 
-    setPageTeamMembers([...teamMembers].splice((currentPage + 1) * 6, 6));
+    switch (currentPage + 1) {
+      case MembersCategories.VADOVAI:
+        setPageTeamMembers([...teamMembers.vadovai]);
+        break;
+      case MembersCategories.RENGINIU_VADOVAI:
+        setPageTeamMembers([...teamMembers.renginiuVadovai]);
+        break;
+      case MembersCategories.KOMUNIKACIJA:
+        setPageTeamMembers([...teamMembers.komunikacija]);
+        break;
+      case MembersCategories.LAN_PARTY_VADOVAI:
+        setPageTeamMembers([...teamMembers.lanPartyVadovai]);
+        break;
+      case MembersCategories.MENTORIAI:
+        setPageTeamMembers([...teamMembers.mentoriai]);
+        break;
+    }
+
     setCurrentPage(currentPage + 1);
   };
 
   const previousPage = () => {
-    if (currentPage <= 0) return;
+    if (currentPage - 1 <= MembersCategories.VADOVAI - 1) return;
 
-    setPageTeamMembers([...teamMembers].splice((currentPage - 1) * 6, 6));
+    switch (currentPage - 1) {
+      case MembersCategories.VADOVAI:
+        setPageTeamMembers([...teamMembers.vadovai]);
+        break;
+      case MembersCategories.RENGINIU_VADOVAI:
+        setPageTeamMembers([...teamMembers.renginiuVadovai]);
+        break;
+      case MembersCategories.KOMUNIKACIJA:
+        setPageTeamMembers([...teamMembers.komunikacija]);
+        break;
+      case MembersCategories.LAN_PARTY_VADOVAI:
+        setPageTeamMembers([...teamMembers.lanPartyVadovai]);
+        break;
+      case MembersCategories.MENTORIAI:
+        setPageTeamMembers([...teamMembers.mentoriai]);
+        break;
+    }
+
     setCurrentPage(currentPage - 1);
   };
   return (
