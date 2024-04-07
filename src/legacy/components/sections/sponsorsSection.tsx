@@ -14,8 +14,12 @@ import PWC from "../../public/sponsors/pwc.png";
 import Wix from "../../public/sponsors/wix.svg";
 import VTeX from "../../public/sponsors/vtex.png";
 import Neara from "../../public/sponsors/neara.png";
+import Skruzdis from "../../public/sponsors/skruzdis.png";
+import Pepsi from "../../public/sponsors/pepsi.png";
+import Badmintonas from "../../public/sponsors/badmintonoC.svg";
+import Smutis from "../../public/sponsors/aaaaaaaaaaa.png";
 
-var goldenSponsors = [
+const goldenSponsors = [
   {
     href: "https://lt.asseco.com/",
     src: Asseco,
@@ -30,7 +34,7 @@ var goldenSponsors = [
   },
 ];
 
-var silverSponsors = [
+const silverSponsors = [
   {
     href: "https://www.twoday.lt/",
     src: TwoDay,
@@ -45,7 +49,7 @@ var silverSponsors = [
   },
 ];
 
-var bronzeSponsors = [
+const bronzeSponsors = [
   {
     href: "https://www.bentley.com/",
     src: Bentley,
@@ -90,7 +94,7 @@ var bronzeSponsors = [
   }
 ];
 
-var standardSponsors = [
+const standardSponsors = [
   {
     href: "https://www.pwc.com/lt/en.html",
     src: PWC,
@@ -117,69 +121,106 @@ var standardSponsors = [
   },
 ];
 
-// var partners = [
-//   {
-//     href: "https://madeinvilnius.lt/",
-//     src: MadeInVilnius,
-//     alt: "MadeInVilnius logotipas",
-//     className: "scale-75",
-//   },
-// ];
+const partners = [
+  {
+    href: "https://badmintonocentras.lt/lt/index",
+    src: Badmintonas,
+    alt: "Badmintono centras",
+    className: "basis-1/4 scale-125 flex items-center justify-center",
+  },
+  {
+    href: "https://madeinvilnius.lt/",
+    src: Smutis,
+    alt: "Smutis",
+    className: "basis-1/4 scale-75 flex items-center justify-center",
+  },
+  {
+    href: "https://madeinvilnius.lt/",
+    src: Skruzdis,
+    alt: "Skruzdis",
+    className: "basis-1/4 scale-75 flex items-center justify-center",
+  },
+  {
+    href: "https://madeinvilnius.lt/",
+    src: Pepsi,
+    alt: "Pepsi",
+    // className: "basis-1/4 scale-50 flex items-center justify-center my-[-7rem]",
+    className: "basis-1/4 flex items-center justify-center max-w-[6rem]",
+  },
+];
 
 export default function SponsorsSection() {
   return (
-    <div>
-      <p className="text-center text-5xl md:text-7xl mb-6">Auksiniai rėmėjai</p>
-      <div className="mx-16 flex flex-wrap place-items-center justify-around justify-items-center gap-8 align-middle">
-        {goldenSponsors.map((sponsor, idx) => (
-          <Sponsor
-            href={sponsor.href}
-            src={sponsor.src}
-            alt={sponsor.alt}
-            key={idx}
-            className={sponsor.className}
-          ></Sponsor>
-        ))}
+      <div style={{backgroundColor: "rgb(15 23 42)"}}>
+        <p className="text-center text-white text-5xl md:text-7xl mb-6 sponsor--font">Auksiniai rėmėjai</p>
+        <div
+            className="mx-16 flex flex-wrap place-items-center justify-around justify-items-center gap-8 align-middle">
+          {goldenSponsors.map((sponsor, idx) => (
+              <Sponsor
+                  href={sponsor.href}
+                  src={sponsor.src}
+                  alt={sponsor.alt}
+                  key={idx}
+                  className={sponsor.className}
+              ></Sponsor>
+          ))}
+        </div>
+        <div className="my-4 h-2 bg-slate-600/30"></div>
+        <p className="text-center text-white text-5xl md:text-7xl sponsor--font">Sidabriniai rėmėjai</p>
+        <div
+            className="mx-16 mt-8 flex flex-wrap items-center justify-around justify-items-stretch gap-8 align-middle">
+          {silverSponsors.map((sponsor, idx) => (
+              <Sponsor
+                  href={sponsor.href}
+                  src={sponsor.src}
+                  alt={sponsor.alt}
+                  key={idx}
+                  className={sponsor.className}
+              ></Sponsor>
+          ))}
+        </div>
+        <div className="my-4 h-2 bg-slate-600/30"></div>
+        <p className="text-center text-white text-5xl md:text-7xl sponsor--font">Bronziniai rėmėjai</p>
+        <div
+            className="m-8 flex flex-wrap place-items-center justify-around justify-items-center gap-8 align-middle">
+          {bronzeSponsors.map((sponsor, idx) => (
+              <Sponsor
+                  href={sponsor.href}
+                  src={sponsor.src}
+                  alt={sponsor.alt}
+                  key={idx}
+                  className={sponsor.className}
+              ></Sponsor>
+          ))}
+        </div>
+        <div className="my-4 h-2 bg-slate-600/30"></div>
+        <p className="text-center text-white text-5xl md:text-7xl sponsor--font">Standartiniai rėmėjai</p>
+        <div
+            className="mt-8 flex flex-wrap place-items-center justify-around justify-items-center gap-8 align-middle">
+          {standardSponsors.map((sponsor, idx) => (
+              <Sponsor
+                  href={sponsor.href}
+                  src={sponsor.src}
+                  alt={sponsor.alt}
+                  key={idx}
+                  className={sponsor.className}
+              ></Sponsor>
+          ))}
+        </div>
+        <div className="my-4 h-2 bg-slate-600/30"></div>
+        <p className="text-center text-white text-5xl md:text-7xl sponsor--font">Partneriai</p>
+        <div
+            className="mt-8 lg:mr-14 flex flex-wrap place-items-center justify-around justify-items-center gap-8 align-middle">
+          {partners.map((sponsor, idx) => (
+              <Sponsor
+                  href={sponsor.href}
+                  src={sponsor.src}
+                  alt={sponsor.alt}
+                  key={idx}
+                  className={sponsor.className}
+              ></Sponsor>
+          ))}
+        </div>
       </div>
-      <div className="my-4 h-2 bg-slate-600/30"></div>
-      <p className="text-center text-5xl md:text-7xl">Sidabriniai rėmėjai</p>
-      <div className="mx-16 mt-8 flex flex-wrap items-center justify-around justify-items-stretch gap-8 align-middle">
-        {silverSponsors.map((sponsor, idx) => (
-          <Sponsor
-            href={sponsor.href}
-            src={sponsor.src}
-            alt={sponsor.alt}
-            key={idx}
-            className={sponsor.className}
-          ></Sponsor>
-        ))}
-      </div>
-      <div className="my-4 h-2 bg-slate-600/30"></div>
-      <p className="text-center text-5xl md:text-7xl">Bronziniai rėmėjai</p>
-      <div className="m-8 flex flex-wrap place-items-center justify-around justify-items-center gap-8 align-middle">
-        {bronzeSponsors.map((sponsor, idx) => (
-          <Sponsor
-            href={sponsor.href}
-            src={sponsor.src}
-            alt={sponsor.alt}
-            key={idx}
-            className={sponsor.className}
-          ></Sponsor>
-        ))}
-      </div>
-      <div className="my-4 h-2 bg-slate-600/30"></div>
-      <p className="text-center text-5xl md:text-7xl">Standartiniai rėmėjai</p>
-      <div className="m-8 flex flex-wrap place-items-center justify-around justify-items-center gap-8 align-middle">
-        {standardSponsors.map((sponsor, idx) => (
-          <Sponsor
-            href={sponsor.href}
-            src={sponsor.src}
-            alt={sponsor.alt}
-            key={idx}
-            className={sponsor.className}
-          ></Sponsor>
-        ))}
-      </div>
-    </div>
   );
 }
