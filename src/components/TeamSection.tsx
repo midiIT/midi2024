@@ -376,7 +376,7 @@ const TeamSection: React.FC = () => {
       {/* Member list */}
       {showClipboard && (
           <div
-              className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
+              className="z-20 fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
               onClick={(e) => {
                 if (e.target === e.currentTarget) {
                   setShowClipboard(false);

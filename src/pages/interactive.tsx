@@ -18,18 +18,6 @@ function Interactive() {
           <img className="h-32 w-32" src={MIDILogo} alt="MIDI Logo"></img>
         </div>
 
-        <div className="flex items-center justify-center h-full">
-          {/* Back Arrow */}
-          <div className="absolute top-4 left-4">
-            <button
-              onClick={goBack}
-              className="text-2xl p-2 hover:bg-gray-200 rounded-full"
-            >
-              ←
-            </button>
-          </div>
-        </div>
-
         <EventSection/>
         {/* Team Icon in Bottom Right Corner */}
           <div className="flex flex-col absolute bottom-4 right-4 items-center">
