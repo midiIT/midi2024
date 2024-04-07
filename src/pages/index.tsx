@@ -14,14 +14,14 @@ function Index() {
           <p className="mb-5 text-white text-lg">Please select webpage type</p>
           <div className="flex justify-center gap-4">
             <Link
-              className="bg-white text-black font-bold py-2 px-4 min-w-[120px] rounded hover:bg-gray-100 focus:outline-none focus:shadow-outline border-4 border-white rainbow-border"
+              className="bg-blue-500 text-white font-bold py-2 px-4 min-w-[120px] rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline"
               type="button"
               to="/interactive"
             >
               Interactive
             </Link>
             <Link
-              className="bg-white text-black font-bold py-2 px-4 min-w-[120px] rounded hover:bg-gray-100 focus:outline-none focus:shadow-outline border-4 border-white hover:border-gray-100"
+              className="bg-blue-500 text-white font-bold py-2 px-4 min-w-[120px] rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline"
               type="button"
               to="/static"
             >

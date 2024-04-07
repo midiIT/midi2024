@@ -3,10 +3,15 @@ export default {
   content: ["./index.html", "./src/**/*.{html,js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["Dosis", "sans-serif"],
+      },
       colors: {
         'midiblue': '#00466C'
       }
-    },
+    }
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+]
 };
