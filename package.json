@@ -18,6 +18,8 @@
     "embla-carousel-react": "^8.0.0-rc22",
     "flowbite": "^2.3.0",
     "flowbite-react": "^0.7.6",
+    "@material-symbols/svg-400": "^0.17.1",
+    "material-symbols": "^0.17.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
