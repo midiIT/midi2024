@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+body {
+    background-color: rgb(15 23 42);
+}
+
+.sponsor {
+    width: 25%;
+}
+
+.sponsor:hover {
+    cursor: pointer;
+}
+
+.sponsor--font {
+    font-family: "Twemoji Country Flags", Dosis, serif;
+}
