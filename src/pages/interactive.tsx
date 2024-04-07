@@ -1,5 +1,8 @@
 import { useNavigate } from "react-router-dom";
+
+import Sponsors from "../components/sponsors/Sponsors.tsx";
 import MIDILogo from "../images/MIDI-Logotipas.png";
+
 
 function Interactive() {
   const navigate = useNavigate();
@@ -35,8 +38,7 @@ function Interactive() {
       </div>
 
       {/* Sponsors Section */}
-      <div className="h-screen flex justify-center items-center bg-black">
-      </div>
+        <Sponsors/>
     </>
   );
 }
