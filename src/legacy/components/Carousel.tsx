@@ -3,6 +3,7 @@ import { useState, useEffect, useCallback } from "react";
 import TeamSectionIcon from "../public/icons/TeamSection.webp";
 import EventSectionIcon from "../public/icons/EventSection.webp";
 import SponsorSectionIcon from "../public/icons/SponsorSection.webp";
+import ArticleSectionIcon from "../public/icons/ArticleSection.webp";
 import Navigationbuttons from "../components/NavigationButtons";
 import MIDILogotipas from "../public/MIDIlogo.webp"
 
@@ -87,10 +88,10 @@ export default function Carousel() {
         className="m-auto h-36 w-auto pr-8 pb-10 md:mb-0 md:mr-0 md:-ml-2 md:mt-0 md:h-auto md:pr-0 short:ml-1"
       ></img>
       <div
-        className="overflow-hidden md:overflow-y-hidden short:overflow-y-auto short:pt-4"
+        className="overflow-y-scroll short:pt-4 no-scrollbar"
         ref={emblaRef}
       >
-        <div className="flex flex-row md:h-full md:flex-col md:justify-evenly md:gap-16 sm:gap-8">
+        <div className="flex flex-row md:h-full md:flex-col md:justify-evenly md:gap-12 short:gap-0">
           <div className="mx-4 flex w-full flex-none flex-col items-center md:mx-0">
             <div
               onClick={() => {
@@ -142,21 +143,21 @@ export default function Carousel() {
               scrollPrev={scrollPrev}
             />
           </div>
-          {/* <div className="mx-4 flex w-full flex-none flex-col items-center md:mx-0">
-            <div
-              onClick={() => setSelectedIndex([3])}
-              className="slide-container z-10 flex cursor-pointer flex-col items-center justify-between"
-            >
-              <img src={ArticleSectionIcon} className="h-32 text-white md:h-20 short:h-14 scale-125"></img>
-              <h2 className="my-1 text-center text-4xl text-white md:text-2xl">
-                Rėmėjų straipsniai
-              </h2>
-            </div>
-            <Navigationbuttons
-              scrollNext={scrollNext}
-              scrollPrev={scrollPrev}
-            />
-          </div> */}
+          {/*<div className="mx-4 flex w-full flex-none flex-col items-center md:mx-0">*/}
+          {/*  <div*/}
+          {/*    onClick={() => setSelectedIndex([3])}*/}
+          {/*    className="slide-container z-10 flex cursor-pointer flex-col items-center justify-between"*/}
+          {/*  >*/}
+          {/*    <img src={ArticleSectionIcon} className="h-32 text-white md:h-20 short:h-14 scale-125"></img>*/}
+          {/*    <h2 className="my-1 text-center text-4xl text-white md:text-2xl">*/}
+          {/*      Rėmėjų straipsniai*/}
+          {/*    </h2>*/}
+          {/*  </div>*/}
+          {/*  <Navigationbuttons*/}
+          {/*    scrollNext={scrollNext}*/}
+          {/*    scrollPrev={scrollPrev}*/}
+          {/*  />*/}
+          {/*</div>*/}
         </div>
       </div>
       {
