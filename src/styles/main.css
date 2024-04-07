@@ -1,6 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Dosis";
+}
+
+body {
+  @apply bg-slate-900;
+}
 
 @keyframes rainbowBorderAnimation {
   0% {

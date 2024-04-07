@@ -1,8 +1,10 @@
 import { useNavigate } from "react-router-dom";
 import TeamSection from "../components/TeamSection";
 import EventSection from "../components/eventSection";
+import Sponsors from "../components/sponsors/Sponsors.tsx";
 import MIDILogo from "../images/MIDI-Logotipas.png";
 import TeamIcon from "../images/team_clipboard.png";
+
 
 function Interactive() {
   const navigate = useNavigate();
@@ -41,7 +43,7 @@ function Interactive() {
       </div>
 
       {/* Sponsors Section */}
-      <div className="h-screen flex justify-center items-center bg-black"></div>
+        <Sponsors/>
     </>
   );
 }
