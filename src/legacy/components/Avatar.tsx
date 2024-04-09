@@ -20,7 +20,7 @@ export default function Avatar(props: {
         alt={props.name}
         loading={props.priority ? "eager" : "lazy"}
       />
-      <p className="text-4xl">{props.name}</p>
+      <p className="text-4xl ">{props.name}</p>
       <p className="w-3/4 text-2xl ">{props.title}</p>
       <a
         href={"mailto:" + props.email}

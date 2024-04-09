@@ -132,19 +132,19 @@ const partners = [
         className: "basis-1/4 scale-125 flex items-center justify-center",
     },
     {
-        href: "https://madeinvilnius.lt/",
+        href: "https://smutis.lt/",
         src: Smutis,
         alt: "Smutis",
         className: "basis-1/4 scale-75 flex items-center justify-center",
     },
     {
-        href: "https://madeinvilnius.lt/",
+        href: "https://www.skruzdis.lt/",
         src: Skruzdis,
         alt: "Skruzdis",
         className: "basis-1/4 scale-75 flex items-center justify-center",
     },
     {
-        href: "https://madeinvilnius.lt/",
+        href: "https://www.pepsi.com/",
         src: Pepsi,
         alt: "Pepsi",
         // className: "basis-1/4 scale-50 flex items-center justify-center my-[-7rem]",
