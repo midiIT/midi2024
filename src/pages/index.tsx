@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Modal from "../helper/modal";
 import {useScreenSize} from "../helper/screenSize";
 
