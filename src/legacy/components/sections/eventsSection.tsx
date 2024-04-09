@@ -114,6 +114,7 @@ var events = [
     photo: Sport,
     location: "Coming soon!",
     more: "https://www.facebook.com/events/1103163390806440",
+    registration: "https://docs.google.com/forms/d/e/1FAIpQLSfJQ3pKay_2dveMlOrNkv19-5F9U0Dhq3NxKTn_wuC3jO82qw/viewform?fbclid=IwAR3wh42LrPt2V28SCve0cYG2GsMYwlvLHQyyYAbxOBXuYWR2VCnzfBxIyyY_aem_AcdIIah6jcGvq_8RN9gvEqkupl78ZVQx83By-RZAKLeB-OTYvgOi5snaf8wTSgQ6cFBn1yV_j49MHMiUHfF-JPC9",
   },
   {
     name: "MIDI Protmūšis | Battle of the Wits",
