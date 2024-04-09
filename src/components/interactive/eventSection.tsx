@@ -86,6 +86,7 @@ export default function EventSection() {
       ‼️ IMPORTANT ‼️<br>
       LAN party computer game tournaments require your own equipment – a computer and all necessary peripheral equipment – monitors, computer mice, keyboards, and such, so when planning to participate in any of the tournaments, do not forget to take the necessary equipment! At least 60% of the team players participating in the tournaments must participate live in the event itself.<br>`,
       more: "https://www.facebook.com/events/794569605864859",
+      registration: "https://linktr.ee/MIDIvadovai",
       rotate: "rotate(-10deg)",
       clickable: true,
     },
@@ -106,6 +107,7 @@ export default function EventSection() {
       <br>
       ✨ Gather your team, test your skills, compete with other participants in PvP and parkour matches, and win prizes!`,
       more: "https://www.facebook.com/events/1501970454037049",
+      registration: "https://forms.gle/XW648VBizNSNpGMG9",
       rotate: "rotate(10deg)",
       clickable: true,
     },
@@ -158,6 +160,7 @@ export default function EventSection() {
       <br>
       More information is coming soon.`,
       more: "https://www.facebook.com/events/335718952392132",
+      registration: "https://docs.google.com/forms/d/1RK3NmVeXndw9sPfwyuey4P7lnsxTKmMIJg2oQO5OXFo/edit?fbclid=IwAR3epwK6Lh6emWxrrFjGNz6SzabAJn0GZYCtWg3aniORgqxmrBolhwzg9vI_aem_AcfC1GVmXrvFYucLbqZvtdsr604zglwuxyMYHw-ftEgFyrDla5JJ8dcFMs3FLe11gEouHttnwi-gdzhtHd1BiVux",
       rotate: "rotate(-20deg)",
       clickable: true,
     },
@@ -172,6 +175,7 @@ export default function EventSection() {
       <br>
       Daugiau informacijos jau netrukus.`,
       more: "https://www.facebook.com/events/1083365632962314",
+      registration: "https://tickets.paysera.com/lt/event/midi-2024-protmusis-battle-of-wits?fbclid=IwAR0Jwrz3wbC2F3FSztT21lqaYAOxbAjMY9Zk7C4U_ZyHC9Nucvq84di1Puk_aem_AcdnczdcYe_cuHunqv2IEMp7B6VF_2tUppUAkJNjoHLzSbMqCzF_Yqgq-JwNaI9EF70sQTcbAWCsCTvKq9t3YKGg",
       rotate: "rotate(-20deg)",
       clickable: true,
     },

@@ -138,7 +138,7 @@ const TeamSection: React.FC = () => {
         picture: Nojus,
         name: "Nojus Jokūbaitis",
         position: "Kūrybinės grupės vadovas",
-        phone: "+370 61 788 075",
+        phone: "+370 67 188 075",
         email: "kurybine@midi.lt",
       },
       {
