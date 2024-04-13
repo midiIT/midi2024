@@ -6,7 +6,7 @@ import Interactive from "./pages/interactive";
 function App() {
   return (
     <>
-      <BrowserRouter basename="/2024test">
+      <BrowserRouter basename="/2024">
         <Routes>
           <Route index element={<Index />}></Route>
           <Route path="static" element={<Static />}></Route>
