@@ -156,7 +156,6 @@ const partners = [
         href: "https://www.pepsi.com/",
         src: Pepsi,
         alt: "Pepsi",
-        // className: "basis-1/4 scale-50 flex items-center justify-center my-[-7rem]",
         className: "basis-1/4 flex items-center justify-center max-w-[6rem]",
     },
     {
