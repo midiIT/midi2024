@@ -5,7 +5,6 @@ import TeamSection from "../components/interactive/teamSection.tsx";
 import EventSection from "../components/interactive/eventSection.tsx";
 import Sponsors from "../components/interactive/sponsors/Sponsors.tsx";
 import MIDILogo from "../images/interactive/MIDI-Logotipas.png";
-import { encrypt, decrypt } from "../helper/cryptography.tsx";
 
 function Interactive() {
   const [cursorPosition, setCursorPosition] = useState({ top: 0, left: 0 });
