@@ -17,14 +17,14 @@ export default function Avatar({
         type="button"
         onClick={scrollPrev}
       >
-        <ArrowSmallLeftIcon className="h-12 w-12 text-midiblue" />
+        <ArrowSmallLeftIcon className="h-12 w-12 text-midiblue_bright" />
       </button>
       <button
         className="relative mx-2 rounded-full border border-slate-800 bg-slate-800"
         type="button"
         onClick={scrollNext}
       >
-        <ArrowSmallRightIcon className="h-12 w-12 text-midiblue" />
+        <ArrowSmallRightIcon className="h-12 w-12 text-midiblue_bright" />
       </button>
     </div>
   );

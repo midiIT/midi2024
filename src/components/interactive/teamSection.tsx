@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from "react";
+
+import '../../styles/main.css';
+
 import Avatar from "./Avatar.tsx";
 import ForwardArrow from '@material-symbols/svg-400/outlined/arrow_forward_ios-fill.svg';
 import BackArrow from '@material-symbols/svg-400/outlined/arrow_back_ios-fill.svg';
@@ -10,7 +13,7 @@ import Domas from "../../images/interactive/team/domas.webp";
 import Rokas from "../../images/interactive/team/rokas.webp";
 import Augustas from "../../images/interactive/team/augustas.webp";
 import Olen from "../../images/interactive/team/olen.webp";
-import Titas from "../../images/interactive/team/titas.png";
+import Titas from "../../images/interactive/team/titas.webp";
 import Vaiva from "../../images/interactive/team/vaiva.webp";
 import MantasG from "../../images/interactive/team/mantasG.webp";
 import Nojus from "../../images/interactive/team/nojus.webp";
@@ -55,6 +58,7 @@ enum MembersCategories {
 const TeamSection: React.FC = () => {
   const [showClipboard, setShowClipboard] = useState(false);
   const [currentPage, setCurrentPage] = useState(MembersCategories.VADOVAI);
+  const [teamTitle, setTeamTitle] = useState("MIDI Vadovai");
 
   const [pageTeamMembers, setPageTeamMembers] = useState([] as TeamMember[]);
 
@@ -134,7 +138,7 @@ const TeamSection: React.FC = () => {
         picture: Nojus,
         name: "Nojus Jokūbaitis",
         position: "Kūrybinės grupės vadovas",
-        phone: "+370 61 788 075",
+        phone: "+370 67 188 075",
         email: "kurybine@midi.lt",
       },
       {
@@ -149,7 +153,7 @@ const TeamSection: React.FC = () => {
         name: "Rūta Skergelzaitė",
         position: "Komunikacijos vadovė",
         phone: "+370 63 818 273",
-        email: "org@midi.lt",
+        email: "info@midi.lt",
       },
       {
         picture: Saule,
@@ -312,18 +316,23 @@ const TeamSection: React.FC = () => {
     switch (currentPage + 1) {
       case MembersCategories.VADOVAI:
         setPageTeamMembers([...teamMembers.vadovai]);
+        setTeamTitle("MIDI Vadovai");
         break;
       case MembersCategories.RENGINIU_VADOVAI:
         setPageTeamMembers([...teamMembers.renginiuVadovai]);
+        setTeamTitle("MIDI Renginių vadovai");
         break;
       case MembersCategories.KOMUNIKACIJA:
         setPageTeamMembers([...teamMembers.komunikacija]);
+        setTeamTitle("MIDI Komunikacija");
         break;
       case MembersCategories.LAN_PARTY_VADOVAI:
         setPageTeamMembers([...teamMembers.lanPartyVadovai]);
+        setTeamTitle("MIDI LAN Party vadovai");
         break;
       case MembersCategories.MENTORIAI:
         setPageTeamMembers([...teamMembers.mentoriai]);
+        setTeamTitle("MIDI Mentoriai");
         break;
     }
 
@@ -336,23 +345,30 @@ const TeamSection: React.FC = () => {
     switch (currentPage - 1) {
       case MembersCategories.VADOVAI:
         setPageTeamMembers([...teamMembers.vadovai]);
+        setTeamTitle("MIDI Vadovai");
         break;
       case MembersCategories.RENGINIU_VADOVAI:
         setPageTeamMembers([...teamMembers.renginiuVadovai]);
+        setTeamTitle("MIDI Renginių vadovai");
         break;
       case MembersCategories.KOMUNIKACIJA:
         setPageTeamMembers([...teamMembers.komunikacija]);
+        setTeamTitle("MIDI Komunikacija");
         break;
       case MembersCategories.LAN_PARTY_VADOVAI:
         setPageTeamMembers([...teamMembers.lanPartyVadovai]);
+        setTeamTitle("MIDI LAN Party vadovai");
         break;
       case MembersCategories.MENTORIAI:
         setPageTeamMembers([...teamMembers.mentoriai]);
+        setTeamTitle("MIDI Mentoriai");
         break;
     }
 
     setCurrentPage(currentPage - 1);
   };
+  // @ts-ignore
+  // @ts-ignore
   return (
     <div>
       {/* Icon */}
@@ -392,10 +408,11 @@ const TeamSection: React.FC = () => {
                 <div className="absolute w-full top-1/3 h-3/4 rounded-t-full bg-gradient-to-t from-amber-500 via-45% via-amber-100 to-amber-400"></div>
               </div>
               <div className="h-full bg-gray-300 overflow-auto m-12 no-scrollbar">
+                <h1 className="flex justify-center text-3xl mt-8">{teamTitle}</h1>
                 <div
-                    className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-8 pb-8 pt-8 mb-24">
+                    className="flex flex-wrap justify-center pb-8 mb-24">
                   {pageTeamMembers.map((member, index) => (
-                      <div key={index} className="flex flex-wrap justify-center">
+                      <div key={index} className="flex flex-wrap justify-center mx-4 mt-4">
                         {/* placeholder */}
                         <Avatar
                             className="basis-full md:basis-1/3 lg:basis-1/4"
@@ -404,7 +421,6 @@ const TeamSection: React.FC = () => {
                             imgsrc={member.picture}
                             phone={member.phone}
                             email={member.email}
-                            placeholder={"blur"}
                         />
                       </div>
                   ))}

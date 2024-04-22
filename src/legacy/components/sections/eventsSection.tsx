@@ -48,6 +48,7 @@ var events = [
     photo: lanparty,
     location: "Didlaukio gatvė 47, LT-08303 Vilnius, Lietuva",
     more: "https://www.facebook.com/events/794569605864859",
+    registration: "https://linktr.ee/MIDIvadovai",
   },
   {
     name: "MIDI Šachmatų turnyras | Chess Tournament",
@@ -94,6 +95,7 @@ var events = [
     photo: Decathlon,
     location: "Online",
     more: "https://www.facebook.com/events/1501970454037049",
+    registration: "https://forms.gle/XW648VBizNSNpGMG9",
   },
   {
     name: "MIDI Asseco Sporto Dienos | Asseco Sports Days",
@@ -112,6 +114,7 @@ var events = [
     photo: Sport,
     location: "Coming soon!",
     more: "https://www.facebook.com/events/1103163390806440",
+    registration: "https://docs.google.com/forms/d/e/1FAIpQLSfJQ3pKay_2dveMlOrNkv19-5F9U0Dhq3NxKTn_wuC3jO82qw/viewform?fbclid=IwAR3wh42LrPt2V28SCve0cYG2GsMYwlvLHQyyYAbxOBXuYWR2VCnzfBxIyyY_aem_AcdIIah6jcGvq_8RN9gvEqkupl78ZVQx83By-RZAKLeB-OTYvgOi5snaf8wTSgQ6cFBn1yV_j49MHMiUHfF-JPC9",
   },
   {
     name: "MIDI Protmūšis | Battle of the Wits",
@@ -121,6 +124,7 @@ var events = [
     photo: Protmusis,
     location: "Ozo gatvė 18, Vilnius. Action! by Apollo",
     more: "https://www.facebook.com/events/1083365632962314",
+    registration: "https://tickets.paysera.com/lt/event/midi-2024-protmusis-battle-of-wits?fbclid=IwAR0Jwrz3wbC2F3FSztT21lqaYAOxbAjMY9Zk7C4U_ZyHC9Nucvq84di1Puk_aem_AcdnczdcYe_cuHunqv2IEMp7B6VF_2tUppUAkJNjoHLzSbMqCzF_Yqgq-JwNaI9EF70sQTcbAWCsCTvKq9t3YKGg",
   },
   {
     name: "MIDI Orientacinės varžybos | Orienteering competition",
@@ -139,6 +143,7 @@ var events = [
     photo: Orientacines,
     location: "Centras/Senamiestis",
     more: "https://www.facebook.com/events/335718952392132",
+    registration: "https://docs.google.com/forms/d/1RK3NmVeXndw9sPfwyuey4P7lnsxTKmMIJg2oQO5OXFo/edit?fbclid=IwAR3epwK6Lh6emWxrrFjGNz6SzabAJn0GZYCtWg3aniORgqxmrBolhwzg9vI_aem_AcfC1GVmXrvFYucLbqZvtdsr604zglwuxyMYHw-ftEgFyrDla5JJ8dcFMs3FLe11gEouHttnwi-gdzhtHd1BiVux",
   },
   {
     name: "MIDI Uždarymo vakaras | Closing Event",
@@ -272,13 +277,13 @@ export default function EventsSection() {
                 </div>
                 <div className="basis-1/2 whitespace-nowrap lg:basis-1/3 2xl:basis-1/5">
                   <a target="_blank" href={event.more} className="">
-                    <div className="m-4 rounded-full border-4 border-midiblue px-4 pt-2 pb-4 text-center text-xl font-semibold text-midiblue transition-all hover:border-white hover:text-white md:text-4xl">
+                    <div className="m-4 rounded-full border-4 border-midiblue_bright px-4 pt-2 pb-4 text-center text-xl font-semibold text-midiblue_bright transition-all hover:border-white hover:text-white md:text-4xl">
                       Daugiau / Read More
                     </div>
                   </a>
                   {event.registration ? (
                     <a target="_blank" href={event.registration}>
-                      <div className="m-4 rounded-full border-4 border-midiblue px-4 pt-2 pb-4 text-center text-xl font-semibold text-midiblue transition-all hover:border-white hover:text-white md:text-4xl">
+                      <div className="m-4 rounded-full border-4 border-midiblue_bright px-4 pt-2 pb-4 text-center text-xl font-semibold text-midiblue_bright transition-all hover:border-white hover:text-white md:text-4xl">
                         Registracija / Register
                       </div>
                     </a>

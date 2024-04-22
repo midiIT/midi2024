@@ -1,6 +1,6 @@
 RewriteEngine On
 # Set the base path for your application
-RewriteBase /2024test/
+RewriteBase /2024/
 # If the requested resource doesn't exist as a file or directory
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d

@@ -1,23 +1,26 @@
 import Sponsor from "../Sponsor";
-import Asseco from "../../public/sponsors/asseco.png";
-import Accenture from "../../public/sponsors/accenture.png";
-import TwoDay from "../../public/sponsors/twoday.svg";
-import Coherent from "../../public/sponsors/coherent.png";
-import Kpmg from "../../public/sponsors/kpmg.png";
-import WU from "../../public/sponsors/westernunionWhite.png";
-import Teltonika from "../../public/sponsors/teltonika.svg";
-import Bentley from "../../public/sponsors/bentley.png";
-import NordCurrent from "../../public/sponsors/nordcurrent.png";
-import Luminor from "../../public/sponsors/luminor.svg";
-import Shift4 from "../../public/sponsors/shift4.svg";
-import PWC from "../../public/sponsors/pwc.png";
-import Wix from "../../public/sponsors/wix.svg";
-import VTeX from "../../public/sponsors/vtex.png";
-import Neara from "../../public/sponsors/neara.png";
-import Skruzdis from "../../public/sponsors/skruzdis.png";
-import Pepsi from "../../public/sponsors/pepsi.png";
-import Badmintonas from "../../public/sponsors/badmintonoC.svg";
-import Smutis from "../../public/sponsors/aaaaaaaaaaa.png";
+import Asseco from "../../../images/interactive/logos/asseco.png";
+import Accenture from "../../../images/interactive/logos/accenture.png";
+import TwoDay from "../../../images/interactive/logos/twoday.svg";
+import Coherent from "../../../images/interactive/logos/coherent.png";
+import Kpmg from "../../../images/interactive/logos/kpmg.png";
+import WU from "../../../images/interactive/logos/westernunionWhite.png";
+import Teltonika from "../../../images/interactive/logos/teltonika.svg";
+import Bentley from "../../../images/interactive/logos/bentley.png";
+import NordCurrent from "../../../images/interactive/logos/nordcurrent.png";
+import Luminor from "../../../images/interactive/logos/luminor.svg";
+import Shift4 from "../../../images/interactive/logos/shift4.svg";
+import PWC from "../../../images/interactive/logos/pwc.png";
+import Wix from "../../../images/interactive/logos/wix.svg";
+import VTeX from "../../../images/interactive/logos/vtex.png";
+import Neara from "../../../images/interactive/logos/neara.png";
+import Skruzdis from "../../../images/interactive/logos/skruzdis.png";
+import Pepsi from "../../../images/interactive/logos/pepsi.png";
+import Badmintonas from "../../../images/interactive/logos/badmintonoC.svg";
+import Smutis from "../../../images/interactive/logos/aaaaaaaaaaaaa.png";
+import Visma from "../../../images/interactive/logos/visma.png";
+import MadeInVilnius from "../../../images/interactive/logos/miv.png";
+import Margas from "../../../images/interactive/logos/margas.png";
 
 const goldenSponsors = [
   {
@@ -91,6 +94,12 @@ const bronzeSponsors = [
     src: Shift4,
     alt: "Shift4 logotipas",
     className: "basis-1/6 scale-125 sm:scale-125 md:scale-125 lg:scale-100",
+  },
+  {
+    href: "https://www.visma.lt/",
+    src: Visma,
+    alt: "Visma logotipas",
+    className: "basis-1/6 scale-125 sm:scale-125 md:scale-125 lg:scale-100",
   }
 ];
 
@@ -126,26 +135,38 @@ const partners = [
     href: "https://badmintonocentras.lt/lt/index",
     src: Badmintonas,
     alt: "Badmintono centras",
-    className: "basis-1/4 scale-125 flex items-center justify-center",
+    className: "basis-1/5 scale-125 flex items-center justify-center",
   },
   {
     href: "https://smutis.lt/",
     src: Smutis,
     alt: "Smutis",
-    className: "basis-1/4 scale-75 flex items-center justify-center",
+    className: "basis-1/5 scale-75 flex items-center justify-center",
   },
   {
     href: "https://www.skruzdis.lt/",
     src: Skruzdis,
     alt: "Skruzdis",
-    className: "basis-1/4 scale-75 flex items-center justify-center",
+    className: "basis-1/5 scale-75 flex items-center justify-center",
   },
   {
     href: "https://www.pepsi.com/",
     src: Pepsi,
     alt: "Pepsi",
-    className: "basis-1/4 flex items-center justify-center max-w-[6rem]",
+    className: "basis-1/5 flex items-center justify-center max-w-[6rem]",
   },
+  {
+    href: "https://madeinvilnius.lt/",
+    src: MadeInVilnius,
+    alt: "Made in Vilnius logotipas",
+    className: "basis-1/5 scale-75 flex items-center justify-center",
+  },
+  {
+      href: "https://www.facebook.com/margaskocelas/",
+      src: Margas,
+      alt: "Margas Kocela logotipas",
+      className: "basis-1/5 scale-75 flex items-center justify-center",
+  }
 ];
 
 export default function SponsorsSection() {

@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, SetStateAction } from "react";
+import { useState, useEffect, useRef } from "react";
 import BlankNote from "../../images/interactive/noteBlank.webp";
 import LANNote from "../../images/interactive/noteLan.webp";
 import DecathlonNote from "../../images/interactive/noteDecathlon.webp";
@@ -20,18 +20,17 @@ import TeamClipboard from "../../images/interactive/teamClipboard.webp";
 
 export default function EventSection() {
   const [activeNote, setActiveNote] = useState(null);
-  const [showEvent, setShowEvent] = useState(false);
-  const modalContentRef = useRef();
+  const modalContentRef = useRef<any>();
   // Using an array of refs to handle multiple notes dynamically
-  const notesRefs = useRef([]);
+  const notesRefs = useRef<any>([]);
   notesRefs.current = [];
-  const addToRefs = (el) => {
+  const addToRefs = (el: never) => {
     if (el && !notesRefs.current.includes(el)) {
       notesRefs.current.push(el);
     }
   };
 
-  const handleClickOutside = (event) => {
+  const handleClickOutside = (event: { target: any; }) => {
     if (
       modalContentRef.current &&
       !modalContentRef.current.contains(event.target)
@@ -41,7 +40,7 @@ export default function EventSection() {
   };
 
   // Define your notes and their positions here
-  const [notes, setNotes] = useState([
+  const [notes] = useState([
     {
       id: "LAN_note",
       top: "5%",
@@ -87,6 +86,7 @@ export default function EventSection() {
       ‼️ IMPORTANT ‼️<br>
       LAN party computer game tournaments require your own equipment – a computer and all necessary peripheral equipment – monitors, computer mice, keyboards, and such, so when planning to participate in any of the tournaments, do not forget to take the necessary equipment! At least 60% of the team players participating in the tournaments must participate live in the event itself.<br>`,
       more: "https://www.facebook.com/events/794569605864859",
+      registration: "https://linktr.ee/MIDIvadovai",
       rotate: "rotate(-10deg)",
       clickable: true,
     },
@@ -107,6 +107,7 @@ export default function EventSection() {
       <br>
       ✨ Gather your team, test your skills, compete with other participants in PvP and parkour matches, and win prizes!`,
       more: "https://www.facebook.com/events/1501970454037049",
+      registration: "https://forms.gle/XW648VBizNSNpGMG9",
       rotate: "rotate(10deg)",
       clickable: true,
     },
@@ -159,6 +160,7 @@ export default function EventSection() {
       <br>
       More information is coming soon.`,
       more: "https://www.facebook.com/events/335718952392132",
+      registration: "https://docs.google.com/forms/d/1RK3NmVeXndw9sPfwyuey4P7lnsxTKmMIJg2oQO5OXFo/edit?fbclid=IwAR3epwK6Lh6emWxrrFjGNz6SzabAJn0GZYCtWg3aniORgqxmrBolhwzg9vI_aem_AcfC1GVmXrvFYucLbqZvtdsr604zglwuxyMYHw-ftEgFyrDla5JJ8dcFMs3FLe11gEouHttnwi-gdzhtHd1BiVux",
       rotate: "rotate(-20deg)",
       clickable: true,
     },
@@ -173,6 +175,7 @@ export default function EventSection() {
       <br>
       Daugiau informacijos jau netrukus.`,
       more: "https://www.facebook.com/events/1083365632962314",
+      registration: "https://tickets.paysera.com/lt/event/midi-2024-protmusis-battle-of-wits?fbclid=IwAR0Jwrz3wbC2F3FSztT21lqaYAOxbAjMY9Zk7C4U_ZyHC9Nucvq84di1Puk_aem_AcdnczdcYe_cuHunqv2IEMp7B6VF_2tUppUAkJNjoHLzSbMqCzF_Yqgq-JwNaI9EF70sQTcbAWCsCTvKq9t3YKGg",
       rotate: "rotate(-20deg)",
       clickable: true,
     },
@@ -222,6 +225,7 @@ export default function EventSection() {
       <br>
       More information is coming soon.`,
       more: "https://www.facebook.com/events/1103163390806440",
+      registration: "https://docs.google.com/forms/d/e/1FAIpQLSfJQ3pKay_2dveMlOrNkv19-5F9U0Dhq3NxKTn_wuC3jO82qw/viewform?fbclid=IwAR3wh42LrPt2V28SCve0cYG2GsMYwlvLHQyyYAbxOBXuYWR2VCnzfBxIyyY_aem_AcdIIah6jcGvq_8RN9gvEqkupl78ZVQx83By-RZAKLeB-OTYvgOi5snaf8wTSgQ6cFBn1yV_j49MHMiUHfF-JPC9",
       rotate: "rotate(-20deg)",
       clickable: true,
     },
@@ -268,7 +272,7 @@ export default function EventSection() {
   ]);
 
   // Define connections between notes by their IDs
-  const [connections, setConnections] = useState([
+  const [connections] = useState([
     { startId: "LAN_note", endId: "Decathlon_note" },
     { startId: "Decathlon_note", endId: "Imoniu_note" },
     { startId: "Imoniu_note", endId: "Orientacines_note" },
@@ -282,9 +286,9 @@ export default function EventSection() {
 
   const [paths, setPaths] = useState([]);
 
-  const toggleEvent = () => setShowEvent(!showEvent);
+  // const toggleEvent = () => setShowEvent(!showEvent);
 
-  const toggleNote = (noteId) => {
+  const toggleNote = (noteId: any) => {
     const note = notes.find((note) => note.id === noteId);
     if (note && note.clickable) {
       // Check if note is clickable
@@ -292,7 +296,7 @@ export default function EventSection() {
     }
   };
 
-  const calculatePath = (startNote, endNote) => {
+  const calculatePath = (startNote: any, endNote: any) => {
     const startX = startNote.left + startNote.width / 2 + window.scrollX;
     const startY = startNote.top + startNote.height / 2 + window.scrollY;
     const endX = endNote.left + endNote.width / 2 + window.scrollX;
@@ -325,6 +329,8 @@ export default function EventSection() {
         return null;
       })
       .filter((path) => path);
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-expect-error
     setPaths(newPaths);
   };
 

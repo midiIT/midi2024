@@ -5,10 +5,14 @@ import OrganizersSection from "@/legacy/components/sections/organizersSection"
 import SponsorsSection from "@/legacy/components/sections/sponsorsSection";
 import TestPDF from "@/legacy/public/pdf/placeholder1.pdf";
 import { Helmet } from "react-helmet";
+import { useState } from "react";
+import { PasswordModal } from "../legacy/components/Carousel";
 
 import "../styles/static.css";
 
 export default function Static() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <>
       <Helmet>
@@ -18,7 +22,7 @@ export default function Static() {
       </Helmet>
       <div className="flex flex-col md:flex-row">
         <div className="md:my-4 md:mx-4 md:h-full md:w-48"></div>
-        <Carousel></Carousel>
+        <Carousel isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
         <section
           id="events"
           className="h-screen w-full px-4 pt-4 text-white transition-opacity duration-500"
@@ -46,6 +50,10 @@ export default function Static() {
           </div>
         </section>
       </div>
+      <PasswordModal
+        isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+        />
     </>
   );
 }

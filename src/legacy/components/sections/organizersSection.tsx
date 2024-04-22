@@ -133,7 +133,7 @@ export default function OrganizersSection() {
           name="Nojus Jokūbaitis"
           title="Kūrybinės grupės vadovas"
           imgsrc={Nojus}
-          phone="+370 61 788 075"
+          phone="+370 67 188 075"
           email="kurybine@midi.lt"
           placeholder={"blur"}
         />
@@ -152,7 +152,7 @@ export default function OrganizersSection() {
           title="Komunikacijos vadovė"
           imgsrc={Ruta}
           phone="+370 63 818 273"
-          email="org@midi.lt"
+          email="info@midi.lt"
           placeholder={"blur"}
         />
         <Avatar
