@@ -153,7 +153,7 @@ const TeamSection: React.FC = () => {
         name: "Rūta Skergelzaitė",
         position: "Komunikacijos vadovė",
         phone: "+370 63 818 273",
-        email: "org@midi.lt",
+        email: "info@midi.lt",
       },
       {
         picture: Saule,

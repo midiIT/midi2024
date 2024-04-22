@@ -152,7 +152,7 @@ export default function OrganizersSection() {
           title="Komunikacijos vadovė"
           imgsrc={Ruta}
           phone="+370 63 818 273"
-          email="org@midi.lt"
+          email="info@midi.lt"
           placeholder={"blur"}
         />
         <Avatar
