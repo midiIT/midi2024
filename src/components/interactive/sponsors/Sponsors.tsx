@@ -22,6 +22,7 @@ import Pepsi from "../../../images/interactive/logos/pepsi.png";
 import Smutis from "../../../images/interactive/logos/aaaaaaaaaaaaa.png";
 import Visma from "../../../images/interactive/logos/visma.png";
 import MadeInVilnius from "../../../images/interactive/logos/miv.png";
+import Margas from "../../../images/interactive/logos/margas.png";
 
 
 const goldenSponsors = [
@@ -163,8 +164,13 @@ const partners = [
         src: MadeInVilnius,
         alt: "Made in Vilnius logotipas",
         className: "basis-1/5 scale-75 flex items-center justify-center",
+    },
+    {
+        href: "https://www.facebook.com/margaskocelas/",
+        src: Margas,
+        alt: "Margas Kocela logotipas",
+        className: "basis-1/5 scale-75 flex items-center justify-center",
     }
-    
 ];
 
 export default function SponsorsSection() {
