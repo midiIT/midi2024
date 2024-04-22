@@ -11,8 +11,7 @@ import CryptoJS from "crypto-js";
 
 const sections: string[] = ["events", "team", "sponsors", "articles"];
 
-export default function Carousel() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+export default function Carousel({ isModalOpen, setIsModalOpen }: { isModalOpen: boolean, setIsModalOpen: React.Dispatch<React.SetStateAction<boolean>> }) {
   const logoClicks = useRef(0);
 
   const [emblaRef, embla] = useEmblaCarousel({
@@ -90,6 +89,8 @@ export default function Carousel() {
     }
   };
 
+  isModalOpen = isModalOpen;
+
   return (
     <div className="z-50 w-full bg-gradient-to-b from-slate-800 to-slate-700/80 py-4 px-8 backdrop-blur-sm md:fixed md:flex md:h-screen md:w-48 md:flex-col md:justify-around">
       <img
@@ -101,10 +102,6 @@ export default function Carousel() {
         className="m-auto h-36 w-auto pr-8 pb-10 md:mb-0 md:mr-0 md:-ml-2 md:mt-0 md:h-auto md:pr-0 short:ml-1"
         onClick={onLogoClick}
         ></img>
-        <PasswordModal
-          isOpen={isModalOpen}
-          onClose={() => setIsModalOpen(false)}
-        />
       <div
         className="overflow-y-scroll short:pt-4 no-scrollbar"
         ref={emblaRef}
@@ -197,7 +194,7 @@ export default function Carousel() {
 
 const secretKey = "kazkasnekazkaseasypeasypeasysqueezy";
 
-function PasswordModal({
+export function PasswordModal({
   isOpen,
   onClose,
 }: {
