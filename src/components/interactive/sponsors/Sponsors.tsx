@@ -20,6 +20,9 @@ import Skruzdis from "../../../images/interactive/logos/skruzdis.png";
 import Badmintonas from "../../../images/interactive/logos/badmintonoC.svg";
 import Pepsi from "../../../images/interactive/logos/pepsi.png";
 import Smutis from "../../../images/interactive/logos/aaaaaaaaaaaaa.png";
+import Visma from "../../../images/interactive/logos/visma.png";
+import MadeInVilnius from "../../../images/interactive/logos/miv.png";
+import Margas from "../../../images/interactive/logos/margas.png";
 
 
 const goldenSponsors = [
@@ -94,6 +97,12 @@ const bronzeSponsors = [
         src: Shift4,
         alt: "Shift4 logotipas",
         className: "basis-1/6 scale-[1.5]",
+    },
+    {
+        href: "https://www.visma.lt/",
+        src: Visma,
+        alt: "Visma logotipas",
+        className: "basis-1/6 scale-125 sm:scale-125 md:scale-125 lg:scale-100",
     }
 ];
 
@@ -132,24 +141,35 @@ const partners = [
         className: "basis-1/4 scale-125 flex items-center justify-center",
     },
     {
-        href: "https://madeinvilnius.lt/",
+        href: "https://smutis.lt/",
         src: Smutis,
         alt: "Smutis",
         className: "basis-1/4 scale-75 flex items-center justify-center",
     },
     {
-        href: "https://madeinvilnius.lt/",
+        href: "https://www.skruzdis.lt/",
         src: Skruzdis,
         alt: "Skruzdis",
         className: "basis-1/4 scale-75 flex items-center justify-center",
     },
     {
-        href: "https://madeinvilnius.lt/",
+        href: "https://www.pepsi.com/",
         src: Pepsi,
         alt: "Pepsi",
-        // className: "basis-1/4 scale-50 flex items-center justify-center my-[-7rem]",
         className: "basis-1/4 flex items-center justify-center max-w-[6rem]",
     },
+    {
+        href: "https://madeinvilnius.lt/",
+        src: MadeInVilnius,
+        alt: "Made in Vilnius logotipas",
+        className: "basis-1/5 scale-75 flex items-center justify-center",
+    },
+    {
+        href: "https://www.facebook.com/margaskocelas/",
+        src: Margas,
+        alt: "Margas Kocela logotipas",
+        className: "basis-1/5 scale-75 flex items-center justify-center",
+    }
 ];
 
 export default function SponsorsSection() {

@@ -6,7 +6,7 @@ export default function Avatar(props: {
   phone: string;
   className?: string;
   priority?: boolean;
-  placeholder?: any;
+  placeholder?: never;
 }) {
   return (
     <div className={
@@ -29,11 +29,11 @@ export default function Avatar(props: {
       <p className="w-3/4 text-xl">{props.title}</p>
       <a
         href={"mailto:" + props.email}
-        className="w-3/4 text-xl text-midiblue inline-flex items-center justify-center"
+        className="w-3/4 text-xl text-midiblue_dark inline-flex items-center justify-center"
       >
         {props.email}
       </a>
-      <a href={"tel:" + props.phone} className="text-xl text-midiblue">
+      <a href={"tel:" + props.phone} className="text-xl text-midiblue_dark">
         {props.phone}
       </a>
     </div>
